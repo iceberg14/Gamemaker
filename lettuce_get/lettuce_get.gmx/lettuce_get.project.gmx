@@ -251,6 +251,7 @@
     </rooms>
     <room>rooms\Map</room>
     <room>rooms\Death_Screen</room>
+    <room>rooms\rm_level_select</room>
     <room>rooms\lvl_1</room>
     <room>rooms\Game_Over</room>
   </rooms>
