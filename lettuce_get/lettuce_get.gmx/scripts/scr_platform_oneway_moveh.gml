@@ -24,16 +24,15 @@ if place_meeting(x,y + round(y_vel),obj_platform_oneway_moveh) && y_vel > 0
     {
         while(!place_meeting(x, y + 1,obj_platform_oneway_moveh)) y += 1;
         y_vel = 0;
-        x_vel += obj_platform_oneway_moveh.x_vel;
+        if x_vel != 0 x += obj_platform_oneway_moveh.x_vel + x_vel;
+        else x += obj_platform_oneway_moveh.x_vel;
     }
 }          
 
 y += round(y_vel);
 
-x += sign(x_vel)*ceil(abs(x_vel));
-
 // Change States to air
-if !position_meeting(x,y+sprite_height/2,obj_platform_oneway_moveh);
+if !position_meeting(x,y+sprite_height/2,obj_platform_oneway_moveh) ground = "air";
 
-if place_meeting(x+x_vel,y,obj_ground) || place_meeting(x,y+y_vel,obj_ground) ground = "ground";
+
 

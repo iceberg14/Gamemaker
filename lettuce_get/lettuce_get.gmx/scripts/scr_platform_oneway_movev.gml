@@ -31,6 +31,6 @@ y += round(y_vel);
 
 x += sign(x_vel)*ceil(abs(x_vel));
 
-// Change States
-if place_meeting(x+x_vel,y,obj_ground) || place_meeting(x,y+y_vel,obj_ground) ground = "ground";
+// Change State to air
+if !position_meeting(x,y+sprite_height/2,obj_platform_oneway_movev) ground = "air";
 

@@ -18,9 +18,6 @@ if (place_meeting(x,y,obj_fireball))
     audio_play_sound(sound_hurt,0,0);
 }
 
-if position_meeting(x,y + round(sprite_height/2),obj_platform_moving_v) && position_meeting(x,y - round(sprite_height/2),obj_wall)
-instance_destroy();
-
 // Collision with player
 if obj_player.invincible = 0 && place_meeting(x,y,obj_player)
 {

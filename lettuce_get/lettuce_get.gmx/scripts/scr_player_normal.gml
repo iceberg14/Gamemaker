@@ -24,7 +24,7 @@ else if (x_dir = -1)
 }
 
 // Checks for different movement conditions and sets sprite animation
-if ((x_vel != 0) && position_meeting(x,y+16,obj_wall))
+if ((x_dir != 0) && (ground != "air"))
 {
     if image_index == 4 image_index = 0;
     image_speed = 1/4;

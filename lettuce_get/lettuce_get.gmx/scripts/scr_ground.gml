@@ -30,6 +30,5 @@ if (place_meeting(x + sign(x_vel)*ceil(abs(x_vel)),y,obj_ground))
 
 x += sign(x_vel)*ceil(abs(x_vel));
 
-// Switches State
-if place_meeting(x,y + y_vel,obj_platform_oneway) ground = "platform_oneway";
-
+// Change States to air
+if !place_meeting(x,y+1,obj_ground) && !place_meeting(x+1,y,obj_ground) && !place_meeting(x-1,y,obj_ground) ground = "air";
