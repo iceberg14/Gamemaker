@@ -69,9 +69,11 @@ if (down) && shell_on_player = 0 && !place_meeting(x+10,y,obj_wall) && !place_me
 // Goes to climb state
 if place_meeting(x,y,obj_ladder) && ((up) || (down))
 {
+    ladder = instance_place(x,y,obj_ladder);
     sprite_index = powerup_sprite_climb;
     image_speed = 0;
     x_vel = 0;
+    x = ladder.x;
     state = state.climb;
 }
 
