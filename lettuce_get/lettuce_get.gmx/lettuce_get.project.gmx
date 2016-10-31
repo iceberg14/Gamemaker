@@ -146,6 +146,7 @@
       <script>scripts\scr_options.gml</script>
       <script>scripts\scr_audio.gml</script>
       <script>scripts\scr_main_menu.gml</script>
+      <script>scripts\scr_load.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -184,6 +185,7 @@
       <object>objects\obj_options</object>
       <object>objects\obj_audio</object>
       <object>objects\obj_controls</object>
+      <object>objects\obj_load</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
