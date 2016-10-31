@@ -8,6 +8,9 @@ y_vel = 2*(down - up);
 
 // Checks for different movement conditions and setes sprite animation
 
+// Moves and Collides
+scr_move_and_collide();
+
 // Goes to normal state
 if x_dir != 0 || !place_meeting(x,y,obj_ladder)
 {
@@ -20,5 +23,5 @@ else if (jump)
     audio_play_sound(sound_jump,0,0);
 }
 
-scr_move_and_collide();
+
 

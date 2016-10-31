@@ -35,6 +35,10 @@ else
     image_index = 4;
 }
 
+// Calculates Normal speed
+x_vel += x_accel * x_dir;
+x_cap = 4;
+scr_move_and_collide();
 
 //STATE CHANGES -- STATE CHANGES -- STATE CHANGES
 
@@ -76,11 +80,6 @@ if place_meeting(x,y,obj_ladder) && ((up) || (down))
     x = ladder.x;
     state = state.climb;
 }
-
-// Calculates Normal speed
-x_vel += x_accel * x_dir;
-x_cap = 4;
-scr_move_and_collide();
 
 
 

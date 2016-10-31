@@ -25,8 +25,8 @@
     <sprites name="Enemies">
       <sprite>sprites\spr_guy</sprite>
       <sprite>sprites\spr_shield</sprite>
-      <sprite>sprites\spr_enemy_1</sprite>
       <sprite>sprites\spr_enemy_2</sprite>
+      <sprite>sprites\spr_enemy_1</sprite>
       <sprite>sprites\spr_enemy_3</sprite>
       <sprite>sprites\spr_porq</sprite>
       <sprite>sprites\spr_homeless</sprite>
@@ -202,6 +202,7 @@
       <object>objects\obj_homless</object>
       <object>objects\obj_enemy_nofall</object>
       <object>objects\obj_enemy_jumper</object>
+      <object>objects\obj_grasshopper</object>
       <object>objects\obj_shield_enemy</object>
     </objects>
     <objects name="Buttons">
