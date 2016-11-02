@@ -87,6 +87,7 @@
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_checkpoint</sprite>
+      <sprite>sprites\spr_save</sprite>
       <sprite>sprites\spr_hud</sprite>
       <sprite>sprites\spr_lvl_end</sprite>
     </sprites>
@@ -216,6 +217,7 @@
       <object>objects\obj_lvl_end</object>
       <object>objects\obj_lighting</object>
       <object>objects\obj_death</object>
+      <object>objects\obj_save</object>
       <object>objects\obj_pause</object>
       <object>objects\obj_scroll</object>
       <object>objects\obj_checkpoint</object>
