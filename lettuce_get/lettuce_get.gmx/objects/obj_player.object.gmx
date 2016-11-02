@@ -56,6 +56,12 @@ timeout = 0;
     x = global.checkpointx;
     y = global.checkpointy;
 }
+*/
+if global.Loaded = 1
+{
+    x = global.Load_x;
+    y = global.Load_y;
+}
 
 </string>
           </argument>

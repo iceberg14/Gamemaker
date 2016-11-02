@@ -3,6 +3,7 @@ switch (mpos)
     case 0:
     {
         room_goto(Map);
+        Loaded = 0;
         break;
     }
     case 1:

@@ -56,12 +56,16 @@ image_speed = 0;
     global.checkpointy = y;
     global.checkpointR = room;
     
-    if (file_exists("Save.sav")) file_delete("Save.sav");
-    Save_file = file_text_open_write("Save.sav");
+    if (file_exists("Save.txt")) file_delete("Save.txt");
+    Save_file = file_text_open_write(working_directory + "Save.txt");
     Save_room = room;
     Save_x    = x;
     Save_y    = y;
-    file_text_write_real(Save_file,Save_room);
+    file_text_write_real(Save_file,room);
+    file_text_writeln(Save_file)
+    file_text_write_real(Save_file,x);
+    file_text_writeln(Save_file)
+    file_text_write_real(Save_file,y);
     file_text_close(Save_file);
     
 }
