@@ -149,6 +149,9 @@
       <script>scripts\scr_main_menu.gml</script>
       <script>scripts\scr_load.gml</script>
     </scripts>
+    <scripts name="map">
+      <script>scripts\scr_map.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_hud</font>
@@ -244,6 +247,9 @@
       <object>objects\obj_platform_oneway</object>
       <object>objects\obj_platform</object>
     </objects>
+    <objects name="map">
+      <object>objects\obj_map</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Title/Main Menu">
@@ -256,8 +262,11 @@
     <room>rooms\Map</room>
     <room>rooms\Death_Screen</room>
     <room>rooms\rm_level_select</room>
-    <room>rooms\lvl_1</room>
     <room>rooms\Game_Over</room>
+    <rooms name="levels">
+      <room>rooms\lvl_1</room>
+      <room>rooms\lvl_2</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
