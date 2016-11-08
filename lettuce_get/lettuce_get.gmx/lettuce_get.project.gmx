@@ -105,6 +105,7 @@
       <sprite>sprites\spr_spike</sprite>
     </sprites>
     <sprite>sprites\spr_menu</sprite>
+    <sprite>sprites\spr_map_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mountain</background>
@@ -148,6 +149,7 @@
       <script>scripts\scr_audio.gml</script>
       <script>scripts\scr_main_menu.gml</script>
       <script>scripts\scr_load.gml</script>
+      <script>scripts\scr_save.gml</script>
     </scripts>
     <scripts name="map">
       <script>scripts\scr_map.gml</script>
@@ -217,7 +219,6 @@
       <object>objects\lvl_1_music</object>
     </objects>
     <objects name="Level">
-      <object>objects\obj_lvl_end</object>
       <object>objects\obj_lighting</object>
       <object>objects\obj_death</object>
       <object>objects\obj_save</object>
@@ -225,6 +226,9 @@
       <object>objects\obj_scroll</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_hud</object>
+      <objects name="end_level">
+        <object>objects\obj_lvl_end_1_1</object>
+      </objects>
     </objects>
     <objects name="Powerups">
       <objects name="Volcanic">
@@ -249,6 +253,7 @@
     </objects>
     <objects name="map">
       <object>objects\obj_map</object>
+      <object>objects\obj_map_test</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -261,7 +266,6 @@
     </rooms>
     <room>rooms\Map</room>
     <room>rooms\Death_Screen</room>
-    <room>rooms\rm_level_select</room>
     <room>rooms\Game_Over</room>
     <rooms name="levels">
       <room>rooms\lvl_1</room>

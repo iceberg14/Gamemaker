@@ -55,8 +55,7 @@ timeout = 0;
 
 if global.Loaded = 1
 {
-    x = global.Load_x;
-    y = global.Load_y;
+    // nothing
 }
 else if (global.checkpointR == room)
 {

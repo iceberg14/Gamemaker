@@ -30,7 +30,7 @@ if place_meeting(x,y,obj_player)
 {
 room_goto(Map);
 audio_stop_sound(sound_main)
-global.lvl_2_open = 1;
+global.lvls[0,0] = 1;
 }
 
 </string>

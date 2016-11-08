@@ -8,7 +8,7 @@ switch(mpos)
     
     case 1:
     {
-        if (global.lvl_2_open == 1)
+        if (global.lvls[0,0] == 1)
         {
             room_goto(lvl_2);
             break;

@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(lvl_1);
-global.lives = 3;
+            <string>game_restart();
+
 </string>
           </argument>
         </arguments>
@@ -49,8 +49,8 @@ global.lives = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(lvl_1);
-global.lives = 3;
+            <string>game_restart();
+
 </string>
           </argument>
         </arguments>
