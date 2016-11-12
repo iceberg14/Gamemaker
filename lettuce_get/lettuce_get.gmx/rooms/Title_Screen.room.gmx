@@ -27,12 +27,12 @@ enum state
     climb,
 }
 
-
-for (var i = 0; i &lt; 4; i += 1)
+// creates a 3x3 array of zeroes to form the basis of the map
+for (var i = 0; i &lt; 3; i += 1)
 {
-    for (var j = 0; j &lt; 5; j += 1)
+    for (var j = 0; j &lt; 4; j += 1)
     {
-        global.lvls[i, j] = 0;
+        global.map_1[i, j] = 0;
     }
 }</code>
   <enableViews>0</enableViews>
