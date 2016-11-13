@@ -246,6 +246,8 @@
       <objects name="end_level">
         <object>objects\obj_lvl_end_1_1</object>
         <object>objects\obj_end_lvl_1_2</object>
+        <object>objects\obj_end_lvl_1_3</object>
+        <object>objects\obj_end_lvl_1_4</object>
       </objects>
     </objects>
     <objects name="Powerups">
@@ -288,6 +290,8 @@
     <rooms name="levels">
       <room>rooms\lvl_1</room>
       <room>rooms\lvl_2</room>
+      <room>rooms\lvl_3</room>
+      <room>rooms\lvl_4</room>
     </rooms>
   </rooms>
   <help>

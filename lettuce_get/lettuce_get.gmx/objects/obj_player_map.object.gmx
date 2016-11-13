@@ -43,6 +43,24 @@ switch (lv)
         y = 152;
         break;
     }
+    case 2:
+    {
+        x = 200;
+        y = 152;
+        break;
+    }
+    case 3:
+    {
+        x = 200;
+        y = 56;
+        break;
+    }
+    case 4:
+    {
+        x = 328;
+        y = 184;
+        break;
+    }   
 }
 </string>
           </argument>
@@ -160,6 +178,11 @@ switch (lv)
             path_start(path_04_rev,2,path_action_stop,1);
             lv = 2;
         }
+        if (enter ==  1) &amp;&amp; (! alarm[1])
+        { 
+            alarm[1] = delay;
+            room_goto(lvl_3);  
+        }
         
     break;
     case 4:
@@ -168,6 +191,11 @@ switch (lv)
             alarm[1] = delay;
             path_start(path_03_rev,2,path_action_stop,1);
             lv = 2;
+        }
+        if (enter ==  1) &amp;&amp; (! alarm[1])
+        { 
+            alarm[1] = delay;
+            room_goto(lvl_4);  
         }
     break;
   
