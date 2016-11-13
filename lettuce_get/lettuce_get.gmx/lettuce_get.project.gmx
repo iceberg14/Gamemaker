@@ -244,7 +244,7 @@
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_hud</object>
       <objects name="end_level">
-        <object>objects\obj_lvl_end_1_1</object>
+        <object>objects\obj_end_lvl_1_1</object>
         <object>objects\obj_end_lvl_1_2</object>
         <object>objects\obj_end_lvl_1_3</object>
         <object>objects\obj_end_lvl_1_4</object>
