@@ -55,6 +55,8 @@ image_speed = 0;
     global.checkpointx = x;
     global.checkpointy = y;
     global.checkpointR = room;
+
+    
 }
 
 if (global.checkpointR == room) // is the active checkcpoint in this room

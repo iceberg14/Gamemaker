@@ -37,7 +37,7 @@ shell_just_thrown = 0;
 invincible = 0;
 shell_on_player = 1;
 shell_hp = 3;
-y_accel = 0.4;
+y_accel = .4;
 x_accel = 3;
 x_vel = 0;
 y_vel = 0;
@@ -51,11 +51,18 @@ y_cap_fall = 5;
 image_speed = 0;
 timeout = 0;
 
-if (global.checkpointR == room)
+
+
+if global.Loaded = 1
+{
+    // nothing
+}
+else if (global.checkpointR == room)
 {
     x = global.checkpointx;
     y = global.checkpointy;
 }
+
 </string>
           </argument>
         </arguments>
