@@ -26,9 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>
-delay = 30; // steps
-lv = global.lv;
+delay = 30;        // steps, minimum time between player inputs
+lv    = global.lv; // level number, created in creation code for each level
 
+
+// reads in the current level and starts the player at the appropriate location
 switch (lv)
 {
     case 0: 
@@ -62,6 +64,9 @@ switch (lv)
         break;
     }   
 }
+
+
+
 </string>
           </argument>
         </arguments>
@@ -84,8 +89,9 @@ switch (lv)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///alarm
-//alamr
+            <string>///Alarm run
+
+// this action is needed for the alarms in the step event to run
 </string>
           </argument>
         </arguments>
@@ -109,17 +115,17 @@ switch (lv)
           <argument>
             <kind>1</kind>
             <string>/// Defines each of the player states
-x_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
-y_dir = keyboard_check(vk_down) - keyboard_check(vk_up);
+x_dir = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
+y_dir = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 enter = keyboard_check_pressed(vk_enter);
 
 
 
-if (! alarm[1])
+if (! alarm[1]) // if the minimum time between inputs is exceeded
 {
 switch (lv)
 {
-    case 0:        
+    case 0:             // starting location
         if (x_dir == 1)
         {
             alarm[1] = delay;
@@ -127,7 +133,7 @@ switch (lv)
             lv = 1;
         }
     break;
-    case 1:   
+    case 1:             // level 1-1
         if (x_dir == -1)
         {
             alarm[1] = delay;
@@ -146,7 +152,7 @@ switch (lv)
             room_goto(lvl_1);
         }
     break;
-    case 2:  
+    case 2:             // level 1-2
         if (x_dir == -1)
         {
             alarm[1] = delay;
@@ -171,7 +177,7 @@ switch (lv)
             room_goto(lvl_2);  
         }
     break;
-    case 3:
+    case 3:             // level 1-3
         if y_dir == 1
         {
             alarm[1] = delay;
@@ -185,7 +191,7 @@ switch (lv)
         }
         
     break;
-    case 4:
+    case 4:             // level 1-4
         if x_dir == -1 
         {
             alarm[1] = delay;
