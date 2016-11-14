@@ -26,7 +26,7 @@ if (x_vel < 0)  && (x_dir == 0) && state != state.slide
 if (abs(x_vel) > x_cap)                            x_vel -= 1.5*x_accel*sign(x_vel);
 if (y_vel < -y_cap_rise) || (y_vel > y_cap_fall)   y_vel -= y_accel*sign(y_vel);
 
-// Ground Type Collisions
+// Ground Type Collisions and MOVEMENT
 scr_ground_type();
 
 // Collide with Shell
