@@ -48,7 +48,6 @@ file_text_close(Save_file);
 
 
 room_goto(Map);
-global.lv = 3;
 audio_stop_sound(sound_main)
 
 }
