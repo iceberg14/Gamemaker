@@ -109,18 +109,18 @@ switch (lv)
           <argument>
             <kind>1</kind>
             <string>/// Defines each of the player states
-x_dir = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
-y_dir = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+x_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
+y_dir = keyboard_check(vk_down) - keyboard_check(vk_up);
 enter = keyboard_check_pressed(vk_enter);
 
 
 
-
-
+if (! alarm[1])
+{
 switch (lv)
 {
     case 0:        
-        if (x_dir == 1) &amp;&amp; (! alarm[1])
+        if (x_dir == 1)
         {
             alarm[1] = delay;
             path_start(path_01,2,path_action_stop,1);
@@ -128,57 +128,57 @@ switch (lv)
         }
     break;
     case 1:   
-        if (x_dir == -1) &amp;&amp; (! alarm[1])
+        if (x_dir == -1)
         {
             alarm[1] = delay;
             path_start(path_01_rev,2,path_action_stop,1);
             lv = 0;
         }
-        if (x_dir ==  1) &amp;&amp; (global.map_1[1,1] == 1) &amp;&amp; (! alarm[1])
+        if (x_dir ==  1) &amp;&amp; (global.map_1[1,1] == 1)
         {
             alarm[1] = delay;
             path_start(path_02,2,path_action_stop,1);
             lv = 2;
         }
-        if (enter ==  1) &amp;&amp; (! alarm[1])
+        if (enter ==  1)
         {
             alarm[1] = delay;
             room_goto(lvl_1);
         }
     break;
     case 2:  
-        if (x_dir == -1) &amp;&amp; (! alarm[1])
+        if (x_dir == -1)
         {
             alarm[1] = delay;
             path_start(path_02_rev,2,path_action_stop,1);
             lv = 1;
         }
-        if (y_dir ==  1) &amp;&amp; (global.map_1[1,2] == 1) &amp;&amp; (! alarm[1])
+        if (y_dir ==  1) &amp;&amp; (global.map_1[1,2] == 1)
         {
             alarm[1] = delay;
             path_start(path_03,2,path_action_stop,1);
             lv = 4;
         }
-        if (y_dir == -1) &amp;&amp; (global.map_1[1,2] == 1) &amp;&amp; (! alarm[1])
+        if (y_dir == -1) &amp;&amp; (global.map_1[1,2] == 1)
         {
             alarm[1] = delay;
             path_start(path_04,2,path_action_stop,1);
             lv = 3;
         }
-        if (enter ==  1) &amp;&amp; (! alarm[1])
+        if (enter ==  1)
         { 
             alarm[1] = delay;
             room_goto(lvl_2);  
         }
     break;
     case 3:
-        if y_dir == 1 &amp;&amp; (! alarm[1])
+        if y_dir == 1
         {
             alarm[1] = delay;
             path_start(path_04_rev,2,path_action_stop,1);
             lv = 2;
         }
-        if (enter ==  1) &amp;&amp; (! alarm[1])
+        if (enter ==  1)
         { 
             alarm[1] = delay;
             room_goto(lvl_3);  
@@ -186,13 +186,13 @@ switch (lv)
         
     break;
     case 4:
-        if x_dir == -1 &amp;&amp; (! alarm[1])
+        if x_dir == -1 
         {
             alarm[1] = delay;
             path_start(path_03_rev,2,path_action_stop,1);
             lv = 2;
         }
-        if (enter ==  1) &amp;&amp; (! alarm[1])
+        if (enter ==  1)
         { 
             alarm[1] = delay;
             room_goto(lvl_4);  
@@ -201,7 +201,7 @@ switch (lv)
   
 }
 
-
+}
 
 </string>
           </argument>
