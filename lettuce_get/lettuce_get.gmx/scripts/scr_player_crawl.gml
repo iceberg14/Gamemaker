@@ -25,6 +25,11 @@ else
     image_speed = 0.05;
 }
 
+// Calculates Normal speed
+x_vel += x_accel/2 * x_dir;
+if place_meeting(x,y+1,obj_wall) x_cap = 2;
+scr_move_and_collide();
+
 // Goes to crawl_shell state
 if (down) && shell_on_player == 1
 {
@@ -33,13 +38,9 @@ if (down) && shell_on_player == 1
 }
 
 // Goes to normal state
-if !(down) && (!place_meeting(x,y-sprite_height/2,obj_wall) && place_meeting(x,y+1,obj_wall))
+if !(down) && !place_meeting(x,y+17-30,obj_wall) && position_meeting(x,y+16,obj_wall)
 {
     state = state.normal;
 }
 
-// Calculates Normal speed
-x_vel += x_accel/2 * x_dir;
-if place_meeting(x,y+1,obj_wall) x_cap = 2;
-scr_move_and_collide();
 

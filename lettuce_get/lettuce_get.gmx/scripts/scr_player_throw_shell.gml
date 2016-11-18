@@ -21,12 +21,19 @@ if (place_meeting(x,y + y_vel,obj_wall))
 y += y_vel;
 
 // Horizontal Collisions
-
-if ((place_meeting(x + x_vel,y,obj_wall)) || place_meeting(x + x_vel,y,obj_shield))
+if place_meeting(x + x_vel,y,obj_ground_breakable)
+{
+    hit = instance_place(x + x_vel,y,obj_ground_breakable);
+    x_vel *= -.9;
+    audio_play_sound(sound_shell,0,0);
+    with hit instance_destroy();
+}    
+else if ((place_meeting(x + x_vel,y,obj_wall)) || place_meeting(x + x_vel,y,obj_shield))
 {
     x_vel *= -.9;
     audio_play_sound(sound_shell,0,0);
 }
+
 
 x_vel *= .999
 

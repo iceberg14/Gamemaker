@@ -16,6 +16,7 @@ global.level = "1-1";
 global.vol = 1;
 global.screenw = 0;
 global.screenh = 0;
+<<<<<<< HEAD
 global.lvl_2_open = 0;
 
 enum state
@@ -35,6 +36,9 @@ for (var i = 0; i &lt; 3; i += 1)
         global.map_1[i, j] = 0;
     }
 }</code>
+=======
+global.res = 0;</code>
+>>>>>>> refs/remotes/origin/Eric
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
