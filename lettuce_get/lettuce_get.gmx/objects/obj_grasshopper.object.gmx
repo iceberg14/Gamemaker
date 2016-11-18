@@ -93,18 +93,10 @@ alarm[0] = random_range(60,120);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x,y + round(y_vel),obj_wall))
-{        
-    while(!place_meeting(x,y + sign(y_vel),obj_wall))
-    {
-        y += sign(y_vel);
-    }
-    y_vel = 0;
-    x_vel = 0;
-}
-
-scr_enemy_move();
+            <string>scr_enemy_move();
 scr_enemy_collide();
+
+if ground != "air" x_vel = 0;
 
 </string>
           </argument>

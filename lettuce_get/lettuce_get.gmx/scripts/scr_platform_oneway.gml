@@ -22,7 +22,7 @@ if place_meeting(x,y + round(y_vel),obj_platform_oneway) && y_vel > 0
     platform = instance_place(x,y + round(y_vel),obj_platform_oneway);
     if (y + sprite_height/2) < platform.y
     {
-        while(!position_meeting(x,y+1+(sprite_height/2),obj_platform_oneway)) y += 1;
+        while(!place_meeting(x,y+sign(y_vel),obj_platform_oneway)) y += sign(y_vel);
         y_vel = 0;
     }
 }          

@@ -8,20 +8,12 @@ if (y_vel < -y_cap) y_vel += y_accel;
 // Vertical collision
 if (place_meeting(x,y + round(y_vel),obj_wall))
 {        
-    while(!place_meeting(x,y + sign(y_vel),obj_wall))
-    {
-        y += sign(y_vel);
-    }
-    y_vel = 0;
-    
     if (foh) && !position_meeting(x+(sprite_width/4)*sign(x_vel),y+(sprite_height/2),obj_wall) 
     {
         x_vel *= -1;
         image_xscale *= -1;
     }
 }
-
-y += round(y_vel);
 
 // Horizontal collision
 if (place_meeting(x + ceil(abs(x_vel))*sign(x_vel),y,obj_wall)) 
@@ -31,6 +23,8 @@ if (place_meeting(x + ceil(abs(x_vel))*sign(x_vel),y,obj_wall))
     image_xscale *= -1;
 }
 
-x += sign(x_vel)*ceil(abs(x_vel));
+// Moves and collides based on ground type
+scr_ground_type();
 
+// Kills enemy if out of room
 if y > (room_height + sprite_height) instance_destroy();
