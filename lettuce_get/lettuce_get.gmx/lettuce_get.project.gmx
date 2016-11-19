@@ -196,6 +196,9 @@
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy</object>
+      <objects name="Bosses">
+        <object>objects\obj_tree_boss</object>
+      </objects>
       <object>objects\obj_shield</object>
       <object>objects\obj_porq</object>
       <object>objects\obj_sap</object>

@@ -2,11 +2,14 @@
 if (place_meeting(x,y,obj_shell))
 {
     other_shell = instance_place(x,y,obj_shell);
-    other_shell.x_vel *= -1;
-    instance_destroy();
-    global.score += points;
-    audio_play_sound(sound_hurt,0,0);
-    obj_player.shell_just_thrown = 0;
+    if abs(other_shell.x_vel) >= 1
+    {
+        other_shell.x_vel *= -1;
+        instance_destroy();
+        global.score += points;
+        audio_play_sound(sound_hurt,0,0);
+        obj_player.shell_just_thrown = 0;
+    }
 }
 
 // Fireball Collision

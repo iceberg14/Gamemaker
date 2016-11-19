@@ -18,20 +18,23 @@ if position_meeting(x,y-sprite_yoffset+sprite_height,obj_platform_oneway_movev)
 }
 
 // Jumping
-run_jump = abs(x_vel)/x_cap;
-if run_jump > 1 run_jump = 1
-
-if (place_meeting(x,y+1,obj_platform_oneway_movev)) && (jump)
+if enemy = 0
 {
-    platform = instance_place(x,y+1,obj_platform_oneway_movev);
-    if (jump) && y + sprite_height/2 <= platform.y
+    run_jump = abs(x_vel)/x_cap;
+    if run_jump > 1 run_jump = 1
+    
+    if (place_meeting(x,y+1,obj_platform_oneway_movev)) && (jump)
     {
-        y_vel = -jumpspeed * (1 + (max_spd_jump*run_jump));
-        audio_play_sound(sound_jump,0,0);
+        platform = instance_place(x,y+1,obj_platform_oneway_movev);
+        if (jump) && y + sprite_height/2 <= platform.y
+        {
+            y_vel = -jumpspeed * (1 + (max_spd_jump*run_jump));
+            audio_play_sound(sound_jump,0,0);
+        }
     }
+    
+    if y_vel < 0 && (!jump_held) y_vel = max(y_vel,-2);
 }
-
-if y_vel < 0 && (!jump_held) y_vel = max(y_vel,0);
 
 y += round(y_vel);
 
