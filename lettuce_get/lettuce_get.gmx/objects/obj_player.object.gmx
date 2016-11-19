@@ -51,11 +51,17 @@ y_cap_fall = 5;
 image_speed = 0;
 timeout = 0;
 
-if (global.checkpointR == room)
+
+if global.Loaded = 1
+{
+    // nothing
+}
+else if (global.checkpointR == room)
 {
     x = global.checkpointx;
     y = global.checkpointy;
 }
+
 </string>
           </argument>
         </arguments>

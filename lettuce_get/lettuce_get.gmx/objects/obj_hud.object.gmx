@@ -37,7 +37,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_text(space,space,"Score: " + string(global.score));
 draw_set_halign(fa_middle);
-draw_text(200,space,"Level " + string(global.level));
+draw_text(200,space,"Level 1-" + string(global.lv));
 draw_set_halign(fa_right);
 draw_text(400-space,space,"Lives: " + string(global.lives));
 

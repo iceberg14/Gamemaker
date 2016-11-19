@@ -10,13 +10,32 @@
   <persistent>0</persistent>
   <colour>16744448</colour>
   <showcolour>-1</showcolour>
-  <code>global.lives = 3;
+  <code>global.res = 0;
+global.lives = 3;
 global.score = 0;
 global.level = "1-1";
 global.vol = 1;
 global.screenw = 0;
 global.screenh = 0;
-global.res = 0;</code>
+global.lvl_2_open = 0;
+
+enum state
+{  
+    normal,
+    slide,
+    crawl,
+    crawl_shell,
+    climb,
+}
+
+// creates a 3x3 array of zeroes to form the basis of the map
+for (var i = 0; i &lt; 3; i += 1)
+{
+    for (var j = 0; j &lt; 4; j += 1)
+    {
+        global.map_1[i, j] = 0;
+    }
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

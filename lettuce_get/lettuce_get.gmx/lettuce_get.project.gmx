@@ -89,6 +89,7 @@
       <sprite>sprites\spr_checkpoint</sprite>
       <sprite>sprites\spr_hud</sprite>
       <sprite>sprites\spr_lvl_end</sprite>
+      <sprite>sprites\spr_save</sprite>
     </sprites>
     <sprites name="Powerups">
       <sprite>sprites\spr_glow</sprite>
@@ -104,13 +105,30 @@
       <sprite>sprites\spr_spike</sprite>
     </sprites>
     <sprite>sprites\spr_menu</sprite>
+    <sprites name="map">
+      <sprite>sprites\spr_player_map</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mountain</background>
     <background>background\bg_mountain2</background>
     <background>background\bg_title</background>
+    <backgrounds name="map">
+      <background>background\bg_map_1</background>
+    </backgrounds>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <paths name="map_1">
+      <path>paths\path_01</path>
+      <path>paths\path_01_rev</path>
+      <path>paths\path_02</path>
+      <path>paths\path_02_rev</path>
+      <path>paths\path_03</path>
+      <path>paths\path_03_rev</path>
+      <path>paths\path_04</path>
+      <path>paths\path_04_rev</path>
+    </paths>
+  </paths>
   <scripts name="scripts">
     <scripts name="Enemies">
       <script>scripts\scr_enemy_collide.gml</script>
@@ -146,6 +164,11 @@
       <script>scripts\scr_options.gml</script>
       <script>scripts\scr_audio.gml</script>
       <script>scripts\scr_main_menu.gml</script>
+      <script>scripts\scr_load.gml</script>
+      <script>scripts\scr_save.gml</script>
+    </scripts>
+    <scripts name="map">
+      <script>scripts\scr_map.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -185,6 +208,7 @@
       <object>objects\obj_options</object>
       <object>objects\obj_audio</object>
       <object>objects\obj_controls</object>
+      <object>objects\obj_load</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -216,13 +240,19 @@
       <object>objects\lvl_1_music</object>
     </objects>
     <objects name="Level">
-      <object>objects\obj_lvl_end</object>
       <object>objects\obj_lighting</object>
       <object>objects\obj_death</object>
       <object>objects\obj_pause</object>
       <object>objects\obj_scroll</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_hud</object>
+      <object>objects\obj_save</object>
+      <objects name="end_level">
+        <object>objects\obj_end_lvl_1_1</object>
+        <object>objects\obj_end_lvl_1_2</object>
+        <object>objects\obj_end_lvl_1_3</object>
+        <object>objects\obj_end_lvl_1_4</object>
+      </objects>
     </objects>
     <objects name="Powerups">
       <objects name="Volcanic">
@@ -245,6 +275,10 @@
       <object>objects\obj_platform_oneway</object>
       <object>objects\obj_platform</object>
     </objects>
+    <objects name="map">
+      <object>objects\obj_map</object>
+      <object>objects\obj_player_map</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Title/Main Menu">
@@ -254,10 +288,15 @@
       <room>rooms\Audio</room>
       <room>rooms\Controls</room>
     </rooms>
-    <room>rooms\Map</room>
     <room>rooms\Death_Screen</room>
-    <room>rooms\lvl_1</room>
     <room>rooms\Game_Over</room>
+    <room>rooms\Map</room>
+    <rooms name="levels">
+      <room>rooms\lvl_1</room>
+      <room>rooms\lvl_2</room>
+      <room>rooms\lvl_3</room>
+      <room>rooms\lvl_4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
