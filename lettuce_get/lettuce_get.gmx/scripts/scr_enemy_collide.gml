@@ -1,10 +1,15 @@
+// Invincibility Timer
+if invincible == 1 scr_hurt();
+
 // Shell Collision
-if (place_meeting(x,y,obj_shell))
+if (place_meeting(x,y,obj_shell)) && invincible == 0
 {
     other_shell = instance_place(x,y,obj_shell);
     if abs(other_shell.x_vel) >= 1
     {
         other_shell.x_vel *= -1;
+        invincible = 1;
+        inv = 60;
         hp -= 1;
         if hp < 1 global.score += points;
         audio_play_sound(sound_hurt,0,0);
@@ -13,7 +18,7 @@ if (place_meeting(x,y,obj_shell))
 }
 
 // Fireball Collision
-if (place_meeting(x,y,obj_fireball)) 
+if (place_meeting(x,y,obj_fireball)) && invincible == 0
 {
     hp -= 1;
     with obj_fireball instance_destroy();

@@ -4,7 +4,7 @@
   <width>2200</width>
   <height>360</height>
   <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -109,10 +109,43 @@
     <instance objName="obj_forest_5" x="2080" y="160" name="inst_BF700608" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_5" x="2080" y="128" name="inst_205C43B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_5" x="2080" y="96" name="inst_0B712D0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snag" x="1985" y="314" name="inst_FB020550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snag" x="1985" y="315" name="inst_FB020550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_5" x="1616" y="128" name="inst_DBCD7435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_view" x="1884" y="320" name="inst_3AF21313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="1664" y="63" name="inst_951FAF3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="112" name="inst_9762AABD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="144" name="inst_CFBB922C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="176" name="inst_D1D03E9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="208" name="inst_E35C7B61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="240" name="inst_B9F3D83D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="272" name="inst_99DDAEF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="304" name="inst_BF850B8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1696" y="336" name="inst_3ADCC395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1712" y="352" name="inst_028B2B4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1744" y="352" name="inst_ECCD549E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1776" y="352" name="inst_B26054CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1808" y="352" name="inst_88F7C4EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1840" y="352" name="inst_BB366AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1872" y="352" name="inst_716183DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1904" y="352" name="inst_FC395EEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1936" y="352" name="inst_6D6A1E52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="1968" y="352" name="inst_64DF352E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2000" y="352" name="inst_B6B643C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2032" y="352" name="inst_2398AE03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2064" y="352" name="inst_1F2D55BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="336" name="inst_18FD423E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="304" name="inst_A906A289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="272" name="inst_7A0D38A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="240" name="inst_7E22EC26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="208" name="inst_A4B6C121" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="176" name="inst_F5FEE2BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="144" name="inst_2A4B2DED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_4" x="2080" y="112" name="inst_42A9A648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="1744" y="120" name="inst_E9EB740C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="1824" y="120" name="inst_25FB8F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="1904" y="120" name="inst_3A15CC76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="1984" y="120" name="inst_386391DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree" x="2064" y="120" name="inst_50C586AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

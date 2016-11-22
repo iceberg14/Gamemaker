@@ -46,6 +46,8 @@ max_spd_jump = 1;
 x_cap = 10;
 jump = 0;
 jump_held = 0;
+inv = 0;
+invincible = 0;
 </string>
           </argument>
         </arguments>

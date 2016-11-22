@@ -39,7 +39,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 10;
+            <string>hp = 20;
 points = 1000;
 originx = x;
 originy = y;
@@ -95,7 +95,8 @@ count = 0; // for acorns
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>/// Alarm 2
+</string>
           </argument>
         </arguments>
       </action>
@@ -120,8 +121,8 @@ count = 0; // for acorns
             <string>/// Shoot Leaves
 leaf[i].direction = point_direction(leaf[i].x,leaf[i].y,obj_player.x,obj_player.y);
 leaf[i].image_angle = leaf[i].direction+180;
-leaf[i].speed = 5;
-leaf[i].alarm[0] = 300;
+if hp &gt; 10 leaf[i].speed = 7;
+else leaf[i].speed = 8;
 leaf[i].image_speed = 0;
 leaf[i].image_index = 1;
 
@@ -131,7 +132,8 @@ audio_play_sound(sound_leaf,0,0);
 if i &lt; 6 
 {
     i += 1;
-    alarm[1] = random_range(10,100);
+    if hp &gt;10 alarm[1] = random_range(10,60);
+    else alarm[1] = random_range(10,30);
 }
 else 
 {
@@ -181,7 +183,8 @@ for (j = 0; j &lt; 7; j += 1)
     leaf[j] = instance_create(x+(20*j)-60,y+round(random_range(100,180)),obj_leaf);
     leaf[j].image_speed = 0.15;
     with leaf[j] path_start(path_leaf,40,path_action_stop,0);
-    }
+}
+
 
 alarm[1] = 120;
 i = 0;
@@ -233,9 +236,14 @@ i = 0;
         {
             acorn = instance_create(round(random_range(1710,2065)),80,obj_acorn);            
             alarm[2] = 5;
+            if count == 80 &amp;&amp; !instance_exists(obj_shell) &amp;&amp; obj_player.shell_on_player != 1
+            {
+                instance_create(round(random_range(1800,1900)),80,obj_shell);
+            }
             count += 1;
         }
-        if count = 120 &amp;&amp; instance_exists(obj_acorn) 
+        
+        if count == 120 &amp;&amp; instance_exists(obj_acorn) 
         {
             attack = 1;
             next = 2;
