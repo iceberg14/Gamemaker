@@ -70,7 +70,11 @@ if (move != 0)
 
 var push;
 push = keyboard_check_pressed(vk_enter);
-if (push == 1) scr_audio();
+if (push == 1) 
+{
+    audio_play_sound(sound_select,0,0);
+    scr_audio();
+}
 
 // Change Volume
 var volmove = 0;

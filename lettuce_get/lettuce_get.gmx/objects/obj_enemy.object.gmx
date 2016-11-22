@@ -28,6 +28,7 @@
             <string>/// Initialize Variable
 
 ground = "ground"
+hp = 1;
 dir = 1;
 foh = 0;
 x_vel = 1;

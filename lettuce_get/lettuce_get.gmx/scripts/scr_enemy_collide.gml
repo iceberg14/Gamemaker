@@ -5,8 +5,8 @@ if (place_meeting(x,y,obj_shell))
     if abs(other_shell.x_vel) >= 1
     {
         other_shell.x_vel *= -1;
-        instance_destroy();
-        global.score += points;
+        hp -= 1;
+        if hp < 1 global.score += points;
         audio_play_sound(sound_hurt,0,0);
         obj_player.shell_just_thrown = 0;
     }
@@ -15,9 +15,9 @@ if (place_meeting(x,y,obj_shell))
 // Fireball Collision
 if (place_meeting(x,y,obj_fireball)) 
 {
-    instance_destroy();
+    hp -= 1;
     with obj_fireball instance_destroy();
-    global.score += points;
+    if hp < 1 global.score += points;
     audio_play_sound(sound_hurt,0,0);
 }
 
@@ -103,4 +103,6 @@ if obj_player.invincible = 0 && place_meeting(x,y,obj_player)
             }
     }
 }
+
+if hp < 1 instance_destroy();
 
