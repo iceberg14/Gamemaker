@@ -2,28 +2,14 @@
 y_vel += y_accel;
 
 // Detects the direction of movement and lowers velocity until zero is hit or surpassed. Sets x_vel = 0 if no direction
-if (x_vel > 0) && (x_dir == 0) && state != state.slide
+if sign(x_vel) != 0 && (x_dir == 0) && state != state.slide
 {
+    if sign(x_vel) != sign(x_vel - x_accel*sign(x_vel)) x_vel = 0;
     x_vel -= x_accel * sign(x_vel);
-    if (x_vel <= 0)
-    {
-        x_vel = 0;
-    }
-}
-
-if (x_vel < 0)  && (x_dir == 0) && state != state.slide
-{
-    x_vel -= x_accel * sign(x_vel);
-
-    if (x_vel >= 0)
-    {
-        x_vel = 0;
-    }
 }
 
 // Checks to see if movement speeds are within set paramaters and corrects them
-    
-if (abs(x_vel) > x_cap)                            x_vel -= 1.5*x_accel*sign(x_vel);
+if (abs(x_vel) > x_cap)                            x_vel -= 3*x_accel*sign(x_vel);
 if (y_vel < -y_cap_rise) || (y_vel > y_cap_fall)   y_vel -= y_accel*sign(y_vel);
 
 // Ground Type Collisions and MOVEMENT

@@ -19,7 +19,7 @@ switch i
         if y_vel > 0 && place_meeting(x,y + round(y_vel),obj_platform_oneway)
         {
             var platform = instance_place(x,y + round(y_vel),obj_platform_oneway)
-            if (y + sprite_height/2) <= platform.y 
+            if (y - sprite_yoffset + sprite_height) <= platform.y 
             {
                 ground = "platform_oneway";
                 scr_platform_oneway();
@@ -31,7 +31,7 @@ switch i
         if y_vel > 0 && place_meeting(x,y + round(y_vel),obj_platform_oneway_moveh) 
         {
             var platform = instance_place(x,y + round(y_vel),obj_platform_oneway_moveh)
-            if (y + sprite_height/2) <= platform.y 
+            if (y - sprite_yoffset + sprite_height) <= platform.y 
             {
                 ground = "platform_oneway_moveh";
                 scr_platform_oneway_moveh();
@@ -39,17 +39,17 @@ switch i
             }
         }
 // Oneway Platform Vertical State
-    case 3:
-        if y_vel > 0 && place_meeting(x,y + round(y_vel) + sprite_height/2,obj_platform_oneway_movev) 
+    /*case 3:
+        place_meeting(x,y + round(y_vel),obj_platform_oneway_movev) 
         {
-            var platform = instance_place(x,y + round(y_vel) + sprite_height/2,obj_platform_oneway_movev)
-            if (y - sprite_get_yoffset(self) + sprite_height) <= platform.y
+            var platform = instance_place(x,y + round(y_vel),obj_platform_oneway_movev)
+            if (y - sprite_yoffset + sprite_height) <= platform.y
             {
                 ground = "platform_oneway_movev";
                 scr_platform_oneway_movev();
                 break;
             }
-        }
+        }*/
 // Moves
     default:
         y += round(y_vel);

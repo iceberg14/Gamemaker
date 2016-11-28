@@ -9,10 +9,11 @@ if (place_meeting(x,y,obj_shell)) && invincible == 0
     {
         other_shell.x_vel *= -1;
         invincible = 1;
+        invistimer = -1;
         inv = 60;
         hp -= 1;
         if hp < 1 global.score += points;
-        audio_play_sound(sound_hurt,0,0);
+        audio_play_sound(sound,0,0);
         obj_player.shell_just_thrown = 0;
     }
 }

@@ -57,7 +57,7 @@
     draw_set_halign(fa_center);
     draw_set_font(fnt_pause);
     draw_set_color(c_white);
-    draw_text(view_xview[0] + 200,view_yview[0]+100,"Game Paused");
+    draw_text(view_xview[0] + 200,view_yview[0]+50,"Game Paused");
     draw_set_color(c_black);
 }
 </string>
@@ -82,14 +82,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!pause)
+            <string>audio_play_sound(sound_select,0,0);
+
+if (!pause)
 {
     pause = 1;
     instance_deactivate_all(true);
+    instance_create(view_xview[0] + 100,view_yview[0]+100,obj_pause_menu);
+    
 }
 else
 {
     pause = 0;
+    with obj_pause_menu instance_destroy();
     instance_activate_all();
 }
 </string>

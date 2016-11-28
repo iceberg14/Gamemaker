@@ -44,7 +44,7 @@ x_vel = 0
 bouncey = 0;
 spikey = 1;
 points = 30;
-
+image_xscale = -1;
 alarm[0] = 60;
 </string>
           </argument>
@@ -68,7 +68,7 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x_vel = -5*image_xscale;
+            <string>x_vel = 5*image_xscale;
 y_vel = -round(random_range(5,10));
 alarm[0] = random_range(60,120);
 </string>

@@ -49,8 +49,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if abs(x-obj_snag.x) &gt; 400 instance_destroy();
-if abs(y-obj_snag.y) &gt; 300 instance_destroy();
+            <string>if instance_exists(obj_snag)
+{
+    if abs(x-obj_snag.x) &gt; 400 instance_destroy();
+    if abs(y-obj_snag.y) &gt; 300 instance_destroy();
+}
+else instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -110,7 +114,7 @@ if abs(y-obj_snag.y) &gt; 300 instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_start(path_leaf_float,2,path_action_continue,0);
+            <string>path_start(path_float,2,path_action_continue,0);
 </string>
           </argument>
         </arguments>

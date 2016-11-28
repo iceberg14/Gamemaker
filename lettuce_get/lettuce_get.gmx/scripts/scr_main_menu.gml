@@ -2,9 +2,7 @@ switch (mpos)
 {
     case 0:
     {
-        room_goto(Map);
-        global.lv = 0;
-        global.Loaded = 0;
+        room_goto(Play);
         break;
     }
     case 1:

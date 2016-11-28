@@ -14,19 +14,18 @@ image_xscale = -1;
 }
 
 // Checks for different movement conditions and setes sprite animation
-if ((x_vel != 0) && place_meeting(x,y+1,obj_wall))image_speed = 0.1;
-else if ( !place_meeting(x,y+1,obj_wall)) 
+if ((abs(x_vel) > 0) && (ground != "air"))
+{
+    image_speed = 1/6;
+}
+else
 {
     image_speed = 0;
-    image_index = 1;
-}
-else 
-{ 
-    image_speed = 0.05;
+    image_index = 0;
 }
 
 // Calculates Normal speed
-x_vel += x_accel/2 * x_dir;
+x_vel += x_accel * x_dir;
 if place_meeting(x,y+1,obj_wall) x_cap = 2;
 scr_move_and_collide();
 
@@ -45,10 +44,21 @@ if shell_on_player == 0
 }
 
 // Goes to normal state
-if !(down) && !place_meeting(x,y+17-30,obj_wall) && position_meeting(x,y+16,obj_wall)
+if !(down) && place_meeting(x,y+1,obj_wall)
 {
     state = state.normal;
 }
 
+
+// Goes to climb state
+if position_meeting(x,y,obj_ladder) && ((up) || (down))
+{
+    ladder = instance_place(x,y,obj_ladder);
+    sprite_index = powerup_sprite_climb;
+    image_speed = 0;
+    x_vel = 0;
+    x = ladder.x;
+    state = state.climb;
+}
 
 

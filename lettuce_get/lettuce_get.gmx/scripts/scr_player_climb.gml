@@ -12,7 +12,7 @@ y_vel = 2*(down - up);
 scr_move_and_collide();
 
 // Goes to normal state
-if x_dir != 0 || !place_meeting(x,y,obj_ladder)
+if !place_meeting(x,y,obj_ladder)
 {
     state = state.normal;
 }

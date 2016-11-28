@@ -13,6 +13,7 @@ switch (vpos)
             {
                 window_set_size(400,240);
                 global.res = 0;
+                alarm[0] = 1;
                 //display_set_gui_size(400,240);
                 //surface_resize(application_surface,400,240);
                 break;
@@ -21,6 +22,7 @@ switch (vpos)
             {
                 window_set_size(800,480);
                 global.res = 1;
+                alarm[0] = 1;
                 //display_set_gui_size(800,480);
                 //surface_resize(application_surface,800,480);
                 break;
@@ -29,6 +31,7 @@ switch (vpos)
             {
                 window_set_size(1200,720);
                 global.res = 2;
+                alarm[0] = 1;
                 //display_set_gui_size(1200,720);
                 //surface_resize(application_surface,1200,720);
                 break;
@@ -37,6 +40,7 @@ switch (vpos)
             {
                 window_set_size(1600,960);
                 global.res = 3;
+                alarm[0] = 1;
                 //display_set_gui_size(1600,960);
                 //surface_resize(application_surface,1600,960);
                 break;
@@ -45,6 +49,7 @@ switch (vpos)
             {
                 window_set_size(2000,1200);
                 global.res = 4;
+                alarm[0] = 1;
                 //display_set_gui_size(2000,1200);
                 //surface_resize(application_surface,2000,1200);
                 break;

@@ -7,7 +7,7 @@ if enemy = 0
     if (place_meeting(x,y+1,obj_platform_oneway)) && (jump)
     {
         platform = instance_place(x,y+1,obj_platform_oneway);
-        if (jump) && y + sprite_height/2 <= platform.y
+        if (jump) && y - sprite_yoffset + sprite_height <= platform.y
         {
             y_vel = -jumpspeed * (1 + (max_spd_jump*run_jump));
             audio_play_sound(sound_jump,0,0);
@@ -19,11 +19,18 @@ if enemy = 0
 
 // Check for Collisions
 
+// Horizontal Collisions
+if (place_meeting(x + sign(x_vel)*ceil(abs(x_vel)),y,obj_ground))
+{
+    while(!place_meeting(x + sign(x_vel),y,obj_ground)) x += sign(x_vel);
+    x_vel = 0;
+}
+
 // Vertical Collisions
 if place_meeting(x,y + round(y_vel),obj_platform_oneway) && y_vel > 0
 {
     platform = instance_place(x,y + round(y_vel),obj_platform_oneway);
-    if (y + sprite_height/2) <= platform.y
+    if (y - sprite_yoffset + sprite_height) <= platform.y
     {
         while(!place_meeting(x,y+sign(y_vel),obj_platform_oneway)) y += sign(y_vel);
         y_vel = 0;
@@ -35,5 +42,5 @@ y += round(y_vel);
 x += sign(x_vel)*ceil(abs(x_vel));
 
 // Change States to air
-if !position_meeting(x,y+(sprite_height/2)+1,obj_platform_oneway) ground = "air";
+if !position_meeting(x,y - sprite_yoffset + sprite_height,obj_platform_oneway) ground = "air";
 

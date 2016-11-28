@@ -3,7 +3,7 @@
   <spriteName>spr_player_normal</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
+  <depth>-998</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,7 +30,7 @@
 state = state.normal;
 powerup = "none"
 ground = "ground"
-
+lvl_complete = 0;
 //Shell Types
 shell_type = "normal"
 shell_just_thrown = 0;
@@ -38,30 +38,31 @@ invincible = 0;
 shell_on_player = 1;
 shell_hp = 3;
 y_accel = .4;
-x_accel = 6;
+x_accel = .4;
 x_vel = 0;
 y_vel = 0;
 jumpspeed = 7;
 max_spd_jump = .2;
 enemy = 0;
-x_cap = 4;
+x_cap = 3;
 y_cap_rise = 15;
 y_cap_fall = 5;
 
 image_speed = 0;
 timeout = 0;
 
-
-if global.Loaded = 1
+if global.Loaded &amp;&amp; global.checkpointR &amp;&amp; global.checkpointx &amp;&amp; global.checkpointy
 {
-    // nothing
+    if global.Loaded = 1
+    {
+        // nothing
+    }
+    else if (global.checkpointR == room)
+    {
+        x = global.checkpointx;
+        y = global.checkpointy;
+    }
 }
-else if (global.checkpointR == room)
-{
-    x = global.checkpointx;
-    y = global.checkpointy;
-}
-
 </string>
           </argument>
         </arguments>
@@ -324,17 +325,21 @@ if powerup = "glow"
           <argument>
             <kind>1</kind>
             <string>/// Defines each of the player states
-switch (state)
+if lvl_complete = 0
 {
-    case state.normal:      scr_player_normal(); break;
-    case state.slide:       scr_player_slide();  break;
-    case state.crawl:       scr_player_crawl(); break;
-    case state.crawl_shell: scr_player_crawl_shell(); break;
-    case state.climb:       scr_player_climb(); break;
+    switch (state)
+    {
+        case state.normal:      scr_player_normal(); break;
+        case state.slide:       scr_player_slide();  break;
+        case state.crawl:       scr_player_crawl(); break;
+        case state.crawl_shell: scr_player_crawl_shell(); break;
+        case state.climb:       scr_player_climb(); break;
+    }
+    
+    if shell_hp == 0 shell_on_player = 0;
+    if invincible == 1 shell_just_thrown = 1;
 }
-
-if shell_hp == 0 shell_on_player = 0;
-if invincible == 1 shell_just_thrown = 1;
+else image_speed = 0;
 </string>
           </argument>
         </arguments>

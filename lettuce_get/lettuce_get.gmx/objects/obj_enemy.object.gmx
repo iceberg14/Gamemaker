@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize Variable
-
+invistimer = 4;
+sound = sound_hurt;
 ground = "ground"
 hp = 1;
 dir = 1;
 foh = 0;
-x_vel = 1;
+x_vel = 0;
+x_dir = 1;
 y_vel = 1;
 y_accel = 1;
 y_cap = 15;
@@ -40,10 +42,10 @@ spikey = 0;
 points = 10;
 image_speed = 0.05;
 enemy = 1;
-x_accel = 0;
+x_accel = .25;
 jumpspeed = 1;
 max_spd_jump = 1;
-x_cap = 10;
+x_cap = 1;
 jump = 0;
 jump_held = 0;
 inv = 0;

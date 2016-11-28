@@ -22,7 +22,7 @@ if enemy = 0
 if place_meeting(x,y + round(y_vel),obj_platform_oneway_moveh) && y_vel > 0
 {
     platform = instance_place(x,y + round(y_vel),obj_platform_oneway_moveh);
-    if y + sprite_height/2 <= platform.y
+    if y - sprite_yoffset + sprite_height <= platform.y
     {
         while(!place_meeting(x,y + 1,obj_platform_oneway_moveh)) y += 1;
         y_vel = 0;
@@ -32,11 +32,11 @@ if place_meeting(x,y + round(y_vel),obj_platform_oneway_moveh) && y_vel > 0
 y += round(y_vel);
 
 // Move with platforms
-if x_vel != 0 && (y + sprite_height/2 <= platform.y) x += ceil(obj_platform_oneway_moveh.x_vel + x_vel);
-else if (y + sprite_height/2 <= platform.y) x += ceil(obj_platform_oneway_moveh.x_vel);
+if x_vel != 0 && (y - sprite_yoffset + sprite_height <= platform.y) x += ceil(obj_platform_oneway_moveh.x_vel + x_vel);
+else if (y - sprite_yoffset + sprite_height <= platform.y) x += ceil(obj_platform_oneway_moveh.x_vel);
 
 // Change States to air
-if !position_meeting(x,y+sprite_height/2,obj_platform_oneway_moveh) ground = "air";
+if !position_meeting(x,y - sprite_yoffset + sprite_height,obj_platform_oneway_moveh) ground = "air";
 
 
 

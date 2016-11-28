@@ -1,22 +1,3 @@
-// Check for Collisions
-
-// Vertical Collisions
-if place_meeting(x,y + round(y_vel),obj_platform_oneway_movev) && y_vel > 0
-{
-    platform = instance_place(x,y + round(y_vel),obj_platform_oneway_movev);
-    if y + sprite_height/2 <= platform.y
-    {
-        while(!place_meeting(x, y + 1,obj_platform_oneway_movev)) y += 1;
-        y_vel = 0;
-    }
-}          
-
-if position_meeting(x,y-sprite_yoffset+sprite_height,obj_platform_oneway_movev)
-{
-    platform = instance_position(x,y-sprite_yoffset+sprite_height,obj_platform_oneway_movev)
-    y_vel = platform.y_vel;
-}
-
 // Jumping
 if enemy = 0
 {
@@ -35,9 +16,12 @@ if enemy = 0
     
     if y_vel < 0 && (!jump_held) y_vel = max(y_vel,-2);
 }
+// Check for Collisions
 
-y += round(y_vel);
+// Vertical Collisions
+platform = instance_place(x,y+1,obj_platform_oneway_movev);
 
+if platform != noone y = platform.y;
 x += sign(x_vel)*ceil(abs(x_vel));
 
 // Change State to air
