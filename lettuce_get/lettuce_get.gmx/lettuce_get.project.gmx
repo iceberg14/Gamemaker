@@ -203,6 +203,7 @@
       <script>scripts\scr_main_menu.gml</script>
       <script>scripts\scr_load.gml</script>
       <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_new_game.gml</script>
     </scripts>
     <scripts name="Map">
       <script>scripts\scr_map.gml</script>
@@ -248,6 +249,7 @@
       <object>objects\obj_audio</object>
       <object>objects\obj_controls</object>
       <object>objects\obj_load</object>
+      <object>objects\obj_new_game</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -337,6 +339,8 @@
       <room>rooms\Options</room>
       <room>rooms\Audio</room>
       <room>rooms\Controls</room>
+      <room>rooms\load_screen</room>
+      <room>rooms\new_game</room>
     </rooms>
     <room>rooms\Death_Screen</room>
     <room>rooms\Game_Over</room>

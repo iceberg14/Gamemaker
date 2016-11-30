@@ -2,7 +2,7 @@ switch (mpos)
 {
     case 0:
     {
-        room_goto(Map);
+        room_goto(new_game);
         global.lv = 0;
         global.Loaded = 0;
         break;
