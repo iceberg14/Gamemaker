@@ -1,9 +1,9 @@
-
-if (file_exists("Save.txt")) file_delete("Save.txt");
-    Save_file = file_text_open_write(working_directory + "Save.txt");
-    Save_file_test = file_text_open_write(working_directory + "Save_test.txt");
+filename = string("Slot_" + string(global.slot));
+if file_exists(filename) file_delete(filename);
+    Save_file = file_text_open_write(working_directory + filename + ".txt");
+    //Save_file_test = file_text_open_write(working_directory + "Save_test.txt");
     
-for (var i = 0; i < 3; i += 1)
+for (var i = 0; i < 4; i += 1)
 {
     for (var j = 0; j < 4; j += 1)
     {

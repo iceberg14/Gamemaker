@@ -38,8 +38,8 @@ slot_full[2] = 0;
 
 
 if file_exists("slot_1.txt") slot_full[0] = 1;
-if file_exists("slot_2.txt") slot_full[1] = 2;
-if file_exists("slot_3.txt") slot_full[2] = 3;
+if file_exists("slot_2.txt") slot_full[1] = 1;
+if file_exists("slot_3.txt") slot_full[2] = 1;
 
 </string>
           </argument>

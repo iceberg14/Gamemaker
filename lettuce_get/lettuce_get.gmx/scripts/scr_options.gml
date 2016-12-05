@@ -59,3 +59,7 @@ switch (vpos)
     }
     default: break;
 }
+
+global.config[1,0] = window_get_width();
+global.config[2,0] = window_get_height();
+scr_save_config();
