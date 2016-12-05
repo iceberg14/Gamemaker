@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>3473408</colour>
+  <colour>15190432</colour>
   <showcolour>-1</showcolour>
   <code>global.lv = 3;</code>
   <enableViews>-1</enableViews>
@@ -58,7 +58,6 @@
     <instance objName="obj_lighting" x="160" y="160" name="inst_C9C10E25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="224" y="224" name="inst_E3F4A629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_lvl_1_3" x="320" y="192" name="inst_891AEBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_for_7" x="320" y="240" name="inst_1C72D401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_for_4" x="304" y="240" name="inst_1C552798" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_for_4" x="288" y="240" name="inst_F80A7C16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_for_4" x="272" y="240" name="inst_D3DD0A05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

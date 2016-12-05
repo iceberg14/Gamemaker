@@ -3,7 +3,6 @@ scr_get_inputs();
 scr_powerup();
 sprite_index = powerup_sprite;
 
-
 // Throw Shell Script
 if throw == 1 && shell_just_thrown == 0
 {
@@ -17,7 +16,7 @@ if throw == 1 && shell_just_thrown == 0
 if x_dir != 0 image_xscale = sign(x_dir);
 
 // Checks for different movement conditions and sets sprite animation
-if ((abs(x_vel) > 0) && (ground != "air"))
+if ((x_vel != 0) && (ground != "air"))
 {
     if image_index == 4 image_index = 0;
     image_speed = 1/5;
@@ -30,7 +29,7 @@ else
 
 // Calculates Normal speed
 x_vel += x_accel * x_dir;
-x_cap = 4;
+x_cap = 3;
 scr_move_and_collide();
 
 //STATE CHANGES -- STATE CHANGES -- STATE CHANGES
@@ -74,7 +73,12 @@ if position_meeting(x,y,obj_ladder) && ((up) || (down))
     state = state.climb;
 }
 
-
+// Tapped move so you can't scoot across one pixel at a time without animating
+if keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_left)
+{
+    image_speed = 1;
+    image_index = 1;
+}
 
 
 

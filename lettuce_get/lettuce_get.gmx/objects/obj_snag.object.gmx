@@ -232,6 +232,8 @@ if i &lt; 6
 }
 else 
 {
+    with obj_staff_glow instance_destroy();
+    sprite_index = spr_snag;
     attack = 1;
     alarm[4] = 120;
     alarm[3] = 600;
@@ -261,8 +263,11 @@ else
           <argument>
             <kind>1</kind>
             <string>/// Create Leaves
-image_index = 1;
+sprite_index = spr_snag_jump;
+image_xscale = 1;
+image_index = 0;
 image_speed = 0;
+instance_create(x-14,y-15,obj_staff_glow);
 
 // Play Leaf Sound
 audio_play_sound(sound_leaf,0,0);   
@@ -305,6 +310,7 @@ i = 0;
 {
     case 0:
     {
+        x_cap = 1;
         scr_enemy_move();
         image_speed = 0;
         image_index = 0;
@@ -350,13 +356,11 @@ i = 0;
         if !alarm[3] &amp;&amp; next = 2 attack = 0;
         else if !alarm[3] &amp;&amp; next = 3
         {
-            attack = 6;
-            audio_play_sound(sound_snag_jump,0,0);
-            x_vel = 0;
-            x_dir = 0;
-            y_vel = -4.55;
-            y_accel = 0.13;
-            alarm[7] = 33;
+            attack = 7;
+            sprite_index = spr_snag_jump;
+            image_index = 0;
+            image_speed = 0;
+            alarm[7] = 20;
         }
         break;
     }   
@@ -441,10 +445,32 @@ i = 0;
         }
         break;
     }
+    case 7: //Crouch and jump animation
+    {
+        if alarm[7]
+        {
+            image_speed = .2;
+            x_vel = 0;
+            x_dir = 0;
+        }
+        else
+        {
+            y_vel = -4.55;
+            y_accel = 0.13;
+            audio_play_sound(sound_snag_jump,0,0);
+            sprite_index = spr_snag;
+            image_speed = 0;
+            image_index = 0;
+            alarm[7] = 33;
+            attack = 6;
+        }
+        break;
+    }   
     default: break;
 }    
 
 scr_enemy_collide();
+
 if hp &lt; 1
 {
 rift = instance_create(x,y-50,obj_end_lvl_1_4);

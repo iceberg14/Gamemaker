@@ -25,11 +25,22 @@ if place_meeting(x,y + round(y_vel),obj_ground)
 y += round(y_vel);
 
 // Horizontal Collisions
-if (place_meeting(x + sign(x_vel)*ceil(abs(x_vel)),y,obj_ground))
+// Walking up slope
+if place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y,obj_ground)
 {
-    while(!place_meeting(x + sign(x_vel),y,obj_ground)) x += sign(x_vel);
-    x_vel = 0;
+    var yplus = 0;
+    while (place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y-yplus,obj_ground) && yplus <= abs(1*x_vel)) yplus += 1;
+    if place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y-yplus,obj_ground)
+    {
+        while(!place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y,obj_ground)) x += sign(x_vel);
+        x_vel = 0;
+    }
+    else
+    {
+        y -= yplus;
+    }
 }
+// Walking down slope
 
 x += sign(x_vel)*ceil(abs(x_vel));
 

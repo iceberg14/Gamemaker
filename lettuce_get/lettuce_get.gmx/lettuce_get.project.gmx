@@ -32,7 +32,31 @@
     <sound>sound\sound_main</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_spikes</sprite>
+    <sprite>sprites\spr_ladder</sprite>
+    <sprites name="Platforms">
+      <sprite>sprites\spr_platform_moving</sprite>
+      <sprite>sprites\spr_platform_oneway</sprite>
+      <sprites name="Gooey">
+        <sprite>sprites\spr_goo_1</sprite>
+        <sprite>sprites\spr_goo_2</sprite>
+        <sprite>sprites\spr_goo_3</sprite>
+        <sprite>sprites\spr_goo_4</sprite>
+        <sprite>sprites\spr_goo_5</sprite>
+        <sprite>sprites\spr_goo_6</sprite>
+      </sprites>
+      <sprites name="Forest">
+        <sprite>sprites\spr_for_1</sprite>
+        <sprite>sprites\spr_for_2</sprite>
+        <sprite>sprites\spr_for_3</sprite>
+        <sprite>sprites\spr_for_4</sprite>
+        <sprite>sprites\spr_for_5</sprite>
+        <sprite>sprites\spr_for_6</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Collectibles">
+      <sprite>sprites\spr_token</sprite>
+      <sprite>sprites\spr_apple</sprite>
       <sprite>sprites\spr_stamp</sprite>
     </sprites>
     <sprites name="Blocks">
@@ -43,28 +67,28 @@
           <sprite>sprites\spr_goo_block_3</sprite>
           <sprite>sprites\spr_goo_block_4</sprite>
           <sprite>sprites\spr_goo_block_5</sprite>
+          <sprite>sprites\spr_goo_block_6</sprite>
           <sprite>sprites\spr_goo_block_top_1</sprite>
           <sprite>sprites\spr_goo_block_top_2</sprite>
           <sprite>sprites\spr_goo_block_top_3</sprite>
-          <sprite>sprites\spr_goo_block_top_4</sprite>
-          <sprite>sprites\spr_goo_block_top_5</sprite>
         </sprites>
         <sprites name="Forest">
           <sprite>sprites\spr_forest_top_1</sprite>
           <sprite>sprites\spr_forest_top_2</sprite>
           <sprite>sprites\spr_forest_top_3</sprite>
-          <sprite>sprites\spr_forest_top_4</sprite>
-          <sprite>sprites\spr_forest_top_5</sprite>
           <sprite>sprites\spr_forest_1</sprite>
           <sprite>sprites\spr_forest_2</sprite>
           <sprite>sprites\spr_forest_3</sprite>
           <sprite>sprites\spr_forest_4</sprite>
           <sprite>sprites\spr_forest_5</sprite>
           <sprite>sprites\spr_forest_6</sprite>
+          <sprite>sprites\spr_forest_7</sprite>
+          <sprites name="Slopes">
+            <sprite>sprites\spr_forest_slope_2</sprite>
+            <sprite>sprites\spr_forest_slope_1</sprite>
+          </sprites>
         </sprites>
       </sprites>
-      <sprite>sprites\spr_ladder</sprite>
-      <sprite>sprites\spr_spikes</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_guy</sprite>
@@ -76,6 +100,7 @@
       <sprite>sprites\spr_homeless</sprite>
       <sprites name="Bosses">
         <sprites name="Snag">
+          <sprite>sprites\spr_staff_glow</sprite>
           <sprite>sprites\spr_snag_jump</sprite>
           <sprite>sprites\spr_snag</sprite>
         </sprites>
@@ -128,9 +153,18 @@
       </sprites>
     </sprites>
     <sprites name="Embellishments">
-      <sprite>sprites\spr_rift</sprite>
+      <sprites name="Gooey">
+        <sprite>sprites\spr_goo_bubble_2</sprite>
+        <sprite>sprites\spr_goo_bubble_1</sprite>
+        <sprite>sprites\spr_rift</sprite>
+      </sprites>
+      <sprites name="Forest">
+        <sprite>sprites\spr_forest_flower_1</sprite>
+        <sprite>sprites\spr_forest_grass_2</sprite>
+        <sprite>sprites\spr_forest_rock_1</sprite>
+        <sprite>sprites\spr_forest_grass_1</sprite>
+      </sprites>
       <sprite>sprites\spr_tree</sprite>
-      <sprite>sprites\spr_sun</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_restart</sprite>
@@ -146,28 +180,6 @@
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_fireball</sprite>
       <sprite>sprites\spr_grease</sprite>
-    </sprites>
-    <sprites name="Platforms">
-      <sprite>sprites\spr_platform_moving</sprite>
-      <sprite>sprites\spr_platform_oneway</sprite>
-      <sprites name="Gooey">
-        <sprite>sprites\spr_goo_1</sprite>
-        <sprite>sprites\spr_goo_2</sprite>
-        <sprite>sprites\spr_goo_3</sprite>
-        <sprite>sprites\spr_goo_4</sprite>
-        <sprite>sprites\spr_goo_5</sprite>
-        <sprite>sprites\spr_goo_6</sprite>
-        <sprite>sprites\spr_goo_7</sprite>
-      </sprites>
-      <sprites name="Forest">
-        <sprite>sprites\spr_for_1</sprite>
-        <sprite>sprites\spr_for_2</sprite>
-        <sprite>sprites\spr_for_3</sprite>
-        <sprite>sprites\spr_for_4</sprite>
-        <sprite>sprites\spr_for_5</sprite>
-        <sprite>sprites\spr_for_6</sprite>
-        <sprite>sprites\spr_for_7</sprite>
-      </sprites>
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\spr_acorn</sprite>
@@ -258,92 +270,14 @@
     <font>fonts\fnt_pause</font>
   </fonts>
   <objects name="objects">
-    <objects name="Collectibles ">
-      <object>objects\obj_stamp</object>
-    </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_shell</object>
     </objects>
-    <objects name="Blocks">
-      <objects name="Ground">
-        <object>objects\obj_wall</object>
-        <object>objects\obj_ground</object>
-        <objects name="Gooey">
-          <object>objects\obj_goo_block_1</object>
-          <object>objects\obj_goo_block_2</object>
-          <object>objects\obj_goo_block_3</object>
-          <object>objects\obj_goo_block_4</object>
-          <object>objects\obj_goo_block_5</object>
-          <object>objects\obj_goo_block_top_1</object>
-          <object>objects\obj_goo_block_top_2</object>
-          <object>objects\obj_goo_block_top_3</object>
-          <object>objects\obj_goo_block_top_4</object>
-          <object>objects\obj_goo_block_top_5</object>
-        </objects>
-        <objects name="Forest">
-          <object>objects\obj_forest_1</object>
-          <object>objects\obj_forest_2</object>
-          <object>objects\obj_forest_3</object>
-          <object>objects\obj_forest_4</object>
-          <object>objects\obj_forest_5</object>
-          <object>objects\obj_forest_6</object>
-          <object>objects\obj_forest_top_1</object>
-          <object>objects\obj_forest_top_2</object>
-          <object>objects\obj_forest_top_3</object>
-          <object>objects\obj_forest_top_4</object>
-          <object>objects\obj_forest_top_5</object>
-        </objects>
-      </objects>
-      <object>objects\obj_spikes</object>
-      <object>objects\obj_ladder</object>
-      <object>objects\obj_ground_breakable</object>
-      <object>objects\obj_wall_falling</object>
-    </objects>
-    <objects name="Platforms">
-      <object>objects\obj_platform_oneway_moveh</object>
-      <object>objects\obj_platform_oneway_movev</object>
-      <objects name="Gooey">
-        <object>objects\obj_goo_1</object>
-        <object>objects\obj_goo_2</object>
-        <object>objects\obj_goo_3</object>
-        <object>objects\obj_goo_4</object>
-        <object>objects\obj_goo_5</object>
-        <object>objects\obj_goo_6</object>
-        <object>objects\obj_goo_7</object>
-      </objects>
-      <object>objects\obj_platform_oneway</object>
-      <objects name="Forest">
-        <object>objects\obj_for_7</object>
-        <object>objects\obj_for_6</object>
-        <object>objects\obj_for_5</object>
-        <object>objects\obj_for_4</object>
-        <object>objects\obj_for_3</object>
-        <object>objects\obj_for_2</object>
-        <object>objects\obj_for_1</object>
-      </objects>
-    </objects>
-    <objects name="Projectiles">
-      <object>objects\obj_acorn</object>
-      <object>objects\obj_leaf</object>
-      <object>objects\obj_spike</object>
-    </objects>
-    <objects name="Main Menu">
-      <object>objects\obj_main_menu</object>
-      <object>objects\obj_options</object>
-      <object>objects\obj_play</object>
-      <object>objects\obj_audio</object>
-      <object>objects\obj_controls</object>
-      <object>objects\obj_load</object>
-    </objects>
-    <objects name="Embellishments">
-      <object>objects\obj_tree</object>
-      <object>objects\obj_rift</object>
-      <object>objects\obj_sun</object>
-    </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy</object>
       <objects name="Bosses">
+        <object>objects\obj_staff_glow</object>
         <object>objects\obj_snag</object>
       </objects>
       <objects name="Forest">
@@ -358,6 +292,96 @@
         <object>objects\obj_floater</object>
       </objects>
     </objects>
+    <objects name="Blocks">
+      <objects name="Ground">
+        <object>objects\obj_wall</object>
+        <object>objects\obj_ground</object>
+        <objects name="Gooey">
+          <object>objects\obj_goo_block_1</object>
+          <object>objects\obj_goo_block_2</object>
+          <object>objects\obj_goo_block_3</object>
+          <object>objects\obj_goo_block_4</object>
+          <object>objects\obj_goo_block_5</object>
+          <object>objects\obj_goo_block_6</object>
+          <object>objects\obj_goo_block_top_1</object>
+          <object>objects\obj_goo_block_top_2</object>
+          <object>objects\obj_goo_block_top_3</object>
+        </objects>
+        <objects name="Forest">
+          <object>objects\obj_forest_1</object>
+          <object>objects\obj_forest_2</object>
+          <object>objects\obj_forest_3</object>
+          <object>objects\obj_forest_4</object>
+          <object>objects\obj_forest_5</object>
+          <object>objects\obj_forest_6</object>
+          <object>objects\obj_forest_top_1</object>
+          <object>objects\obj_forest_top_2</object>
+          <object>objects\obj_forest_top_3</object>
+          <object>objects\obj_forest_7</object>
+          <objects name="Slopes">
+            <object>objects\obj_forest_slope_1</object>
+            <object>objects\obj_forest_slope_2</object>
+          </objects>
+        </objects>
+      </objects>
+      <object>objects\obj_spikes</object>
+      <object>objects\obj_ladder</object>
+      <object>objects\obj_ground_breakable</object>
+      <object>objects\obj_wall_falling</object>
+    </objects>
+    <objects name="Platforms">
+      <objects name="Forest">
+        <object>objects\obj_for_1</object>
+        <object>objects\obj_for_2</object>
+        <object>objects\obj_for_3</object>
+        <object>objects\obj_for_4</object>
+        <object>objects\obj_for_5</object>
+        <object>objects\obj_for_6</object>
+      </objects>
+      <objects name="Gooey">
+        <object>objects\obj_goo_1</object>
+        <object>objects\obj_goo_2</object>
+        <object>objects\obj_goo_3</object>
+        <object>objects\obj_goo_4</object>
+        <object>objects\obj_goo_5</object>
+        <object>objects\obj_goo_6</object>
+      </objects>
+      <object>objects\obj_platform_oneway_moveh</object>
+      <object>objects\obj_platform_oneway_movev</object>
+      <object>objects\obj_platform_oneway</object>
+    </objects>
+    <objects name="Embellishments">
+      <object>objects\obj_tree</object>
+      <objects name="Forest">
+        <object>objects\obj_forest_flower_1</object>
+        <object>objects\obj_forest_rock_1</object>
+        <object>objects\obj_forest_grass_1</object>
+        <object>objects\obj_forest_grass_2</object>
+      </objects>
+      <objects name="Gooey">
+        <object>objects\obj_goo_bubble_1</object>
+        <object>objects\obj_goo_bubble_2</object>
+        <object>objects\obj_rift</object>
+      </objects>
+    </objects>
+    <objects name="Collectibles ">
+      <object>objects\obj_stamp</object>
+      <object>objects\obj_apple</object>
+      <object>objects\obj_token</object>
+    </objects>
+    <objects name="Projectiles">
+      <object>objects\obj_acorn</object>
+      <object>objects\obj_leaf</object>
+      <object>objects\obj_spike</object>
+    </objects>
+    <objects name="Main Menu">
+      <object>objects\obj_main_menu</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_play</object>
+      <object>objects\obj_audio</object>
+      <object>objects\obj_controls</object>
+      <object>objects\obj_load</object>
+    </objects>
     <objects name="Buttons">
       <object>objects\obj_restart</object>
       <object>objects\obj_quit</object>
@@ -367,19 +391,19 @@
       <object>objects\lvl_1_music</object>
     </objects>
     <objects name="Level">
-      <objects name="end_level">
+      <objects name="End Level">
         <object>objects\obj_end_tutorial</object>
         <object>objects\obj_end_lvl_1_1</object>
         <object>objects\obj_end_lvl_1_2</object>
         <object>objects\obj_end_lvl_1_3</object>
         <object>objects\obj_end_lvl_1_4</object>
       </objects>
-      <object>objects\obj_lighting</object>
-      <object>objects\obj_death</object>
       <objects name="Pause">
         <object>objects\obj_pause</object>
         <object>objects\obj_pause_menu</object>
       </objects>
+      <object>objects\obj_lighting</object>
+      <object>objects\obj_death</object>
       <object>objects\obj_scroll</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_hud</object>

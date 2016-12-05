@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Draw HUD
 
-display_set_gui_size(400, 240);
+display_set_gui_size(400,240);
 draw_sprite_stretched(spr_hud,0,0,0,400,240);
 
 // Draw texts for score, lives, level

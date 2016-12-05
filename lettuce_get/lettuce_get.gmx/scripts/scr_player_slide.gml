@@ -28,7 +28,7 @@ scr_move_and_collide();
 // Move to another state
 
 // Go to normal state
-if (!down && place_meeting(x,y+1,obj_wall) && !place_meeting(x,y-sprite_height/2,obj_wall)) || (place_meeting(x+sign(image_xscale),y,obj_ground) && !(down)) || (place_meeting(x-sign(image_xscale),y,obj_ground) && !(down)) && alarm[5] == -1
+if (!down && place_meeting(x,y+1,obj_wall) && !place_meeting(x,y+sprite_yoffset-30,obj_wall)) || (place_meeting(x+sign(image_xscale),y,obj_ground) && !(down)) || (place_meeting(x-sign(image_xscale),y,obj_ground) && !(down)) && alarm[5] == -1
 {
     alarm[6] = 10;
     state = state.normal;

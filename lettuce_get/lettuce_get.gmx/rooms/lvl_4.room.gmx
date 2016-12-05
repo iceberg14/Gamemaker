@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>8388672</colour>
+  <colour>7489119</colour>
   <showcolour>-1</showcolour>
   <code>global.lv = 4;</code>
   <enableViews>-1</enableViews>
@@ -63,7 +63,6 @@
     <instance objName="obj_goo_1" x="144" y="240" name="inst_5E0D9CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_2" x="160" y="240" name="inst_41DC1595" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_2" x="224" y="240" name="inst_F5CCD8AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="320" y="240" name="inst_E9AE4260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_3" x="176" y="240" name="inst_EA7CB5E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_3" x="272" y="240" name="inst_5944B432" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_4" x="192" y="240" name="inst_8D0E5359" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -71,21 +70,14 @@
     <instance objName="obj_goo_4" x="288" y="240" name="inst_F19F098A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_4" x="208" y="240" name="inst_B2D0F5D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_5" x="256" y="240" name="inst_E8A6A612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_6" x="304" y="240" name="inst_9F06E2B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_1" x="400" y="272" name="inst_CC299E00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_1" x="512" y="224" name="inst_286A4BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_1" x="656" y="288" name="inst_7932CE03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_1" x="800" y="240" name="inst_931EA4F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_1" x="928" y="288" name="inst_A2DAEC62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_4" x="544" y="224" name="inst_4BC5FE20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="432" y="272" name="inst_FAF55AB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="560" y="224" name="inst_B20DBBD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="704" y="288" name="inst_379AADAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="848" y="240" name="inst_150B88F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="944" y="288" name="inst_F81BD5AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_2" x="416" y="272" name="inst_EB6ABE9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_5" x="528" y="224" name="inst_E9651635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_6" x="672" y="288" name="inst_C1AAEB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_3" x="688" y="288" name="inst_99FD522C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_3" x="816" y="240" name="inst_2827E3E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_5" x="832" y="240" name="inst_BA9A6C70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -110,82 +102,6 @@
     <instance objName="obj_goo_block_5" x="0" y="272" name="inst_849E3A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_5" x="0" y="288" name="inst_7E43CBD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_5" x="0" y="304" name="inst_7F3C3C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="96" y="320" name="inst_5C77CC99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="80" y="320" name="inst_8C82C79D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="64" y="320" name="inst_CFB74B94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="48" y="320" name="inst_FC8F95BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="32" y="320" name="inst_48DDA30F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="16" y="320" name="inst_CDD227B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="0" y="320" name="inst_F8BB93E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_1" x="16" y="304" name="inst_F8E7AAAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_2" x="32" y="304" name="inst_2A9CB723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_3" x="48" y="304" name="inst_A226B536" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="64" y="304" name="inst_8C9C3DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="80" y="304" name="inst_B94BD02E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_5" x="96" y="304" name="inst_EFEFA076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_1" x="1008" y="320" name="inst_9FE3E02A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1024" y="320" name="inst_CB57F224" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1040" y="320" name="inst_0B2F2E09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1056" y="320" name="inst_079ED9AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1072" y="320" name="inst_AFB7FC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1088" y="320" name="inst_9961679B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1104" y="320" name="inst_140D86E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1120" y="320" name="inst_00F13342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1136" y="320" name="inst_9E9F589A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1152" y="320" name="inst_28242415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1168" y="320" name="inst_281ED5FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1184" y="320" name="inst_539D96BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1200" y="320" name="inst_DB7F22C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1216" y="320" name="inst_A737260D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1232" y="320" name="inst_BB293A50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1248" y="320" name="inst_D6267671" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1264" y="320" name="inst_B3604009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1280" y="320" name="inst_ADF779C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1296" y="320" name="inst_5229DA98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1312" y="320" name="inst_074ECC24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1328" y="320" name="inst_61BB9A8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1344" y="320" name="inst_15126C2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1360" y="320" name="inst_DEFE5413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1376" y="320" name="inst_B6DB6593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1392" y="320" name="inst_A48B01D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1408" y="320" name="inst_404F719A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1424" y="320" name="inst_1C92E5D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1440" y="320" name="inst_E64D4C68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1456" y="320" name="inst_0B25F725" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1536" y="320" name="inst_C4C7130D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1552" y="320" name="inst_A197D73C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1568" y="320" name="inst_8624194B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1584" y="320" name="inst_7F132909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1600" y="320" name="inst_5973A3C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1616" y="320" name="inst_622F0C83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1632" y="320" name="inst_37CEA73D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1648" y="320" name="inst_5B44E728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1664" y="320" name="inst_98357C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1680" y="320" name="inst_D051AA73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1696" y="320" name="inst_BDE53142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1712" y="320" name="inst_233EA801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1728" y="320" name="inst_A5E93A8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1744" y="320" name="inst_AE9A2A84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1760" y="320" name="inst_95100DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1776" y="320" name="inst_C04947BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1792" y="320" name="inst_B0499C13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1808" y="320" name="inst_8978AD31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1824" y="320" name="inst_41D810F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1840" y="320" name="inst_B04AAD15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1856" y="320" name="inst_A1A9CBC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1872" y="320" name="inst_7586840B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1888" y="320" name="inst_BFAD82CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1904" y="320" name="inst_84CF94E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1920" y="320" name="inst_CE102631" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1936" y="320" name="inst_42FAE10B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1952" y="320" name="inst_771861D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1968" y="320" name="inst_99AE2EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="1984" y="320" name="inst_D65F871C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="2000" y="320" name="inst_079D7B92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="2016" y="320" name="inst_18598604" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="2032" y="320" name="inst_116C6166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_3" x="2048" y="320" name="inst_75EDC4F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_5" x="2064" y="320" name="inst_A72221EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_1" x="2064" y="304" name="inst_0448DA10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_1" x="2064" y="288" name="inst_8C3AFB26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_1" x="2064" y="272" name="inst_34F601BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -225,83 +141,123 @@
     <instance objName="obj_goo_block_5" x="1680" y="112" name="inst_DC02163B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_5" x="1680" y="96" name="inst_2492AAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goo_block_5" x="1680" y="80" name="inst_1042DB9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="2048" y="304" name="inst_6D2333E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="2032" y="304" name="inst_A85531B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="2016" y="304" name="inst_CE8C772A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="2000" y="304" name="inst_C571309D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1984" y="304" name="inst_EC2AA0CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1968" y="304" name="inst_AEEB8274" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1952" y="304" name="inst_FB551B7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1936" y="304" name="inst_A3362CB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1920" y="304" name="inst_50D1EFAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1904" y="304" name="inst_4473C921" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1888" y="304" name="inst_11B5A3EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1872" y="304" name="inst_2DA1E696" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1856" y="304" name="inst_02DC8DB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1840" y="304" name="inst_5AE39F86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1824" y="304" name="inst_ECD4F905" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1808" y="304" name="inst_0DEB452B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1792" y="304" name="inst_5A3D3EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1024" y="304" name="inst_3501C186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1040" y="304" name="inst_70242C91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1056" y="304" name="inst_42637081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1072" y="304" name="inst_ACBBBD2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1088" y="304" name="inst_87E6DA93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1104" y="304" name="inst_231325D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1120" y="304" name="inst_456A1D54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1136" y="304" name="inst_5BE63E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1152" y="304" name="inst_08120D03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1168" y="304" name="inst_842CD6C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1184" y="304" name="inst_D918AB05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1200" y="304" name="inst_43E22E39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1216" y="304" name="inst_86E36EA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1232" y="304" name="inst_1AB4CF98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1248" y="304" name="inst_1067A9DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1264" y="304" name="inst_8D5D7B5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1280" y="304" name="inst_901CF93F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1296" y="304" name="inst_82228BF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1312" y="304" name="inst_20FF1A4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1328" y="304" name="inst_B706E3F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1344" y="304" name="inst_10E8E1E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1360" y="304" name="inst_CBF0D9A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1376" y="304" name="inst_D3C9AEE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1392" y="304" name="inst_7DCD7475" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1408" y="304" name="inst_90FC7817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1424" y="304" name="inst_B9B76505" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1440" y="304" name="inst_C90EB6DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1456" y="304" name="inst_28B6234E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1472" y="304" name="inst_0FCD028B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1536" y="304" name="inst_77FEB700" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1552" y="304" name="inst_E99254D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1568" y="304" name="inst_73C0BB91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1584" y="304" name="inst_583386B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1600" y="304" name="inst_526E1EC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1616" y="304" name="inst_B0CC976D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1632" y="304" name="inst_94E57DF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1648" y="304" name="inst_1CFF735C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1664" y="304" name="inst_AED0D3A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1680" y="304" name="inst_4DCD215B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1696" y="304" name="inst_94154656" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1712" y="304" name="inst_A362C124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1728" y="304" name="inst_4EDEE4F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1744" y="304" name="inst_796594D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1760" y="304" name="inst_36BC2ED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_4" x="1776" y="304" name="inst_9B77BA13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_1" x="1008" y="304" name="inst_1E91B676" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="1712" y="112" name="inst_40576648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="2032" y="112" name="inst_1519D5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="32" y="296" name="inst_6909E134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snag" x="1984" y="291" name="inst_C1EB7D7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eater" x="840" y="236" name="inst_9A58D857" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eater" x="1464" y="304" name="inst_51DA8EA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_top_1" x="1520" y="304" name="inst_FFFB4CA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_1" x="1520" y="320" name="inst_FFFD3E03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_block_5" x="1472" y="320" name="inst_FD7F2389" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1568" y="304" name="inst_6909E134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eater" x="832" y="224" name="inst_9A58D857" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eater" x="1440" y="304" name="inst_51DA8EA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stamp" x="240" y="160" name="inst_50549C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stamp" x="528" y="144" name="inst_C753A264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stamp" x="544" y="288" name="inst_90314DC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_1" x="528" y="304" name="inst_C72C366D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_goo_7" x="544" y="304" name="inst_66A1B105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stamp" x="528" y="176" name="inst_C753A264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="288" y="160" name="inst_6DF666D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="416" y="224" name="inst_1A1E5AB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="672" y="240" name="inst_2931A618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="928" y="240" name="inst_EC68EE2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="1056" y="272" name="inst_F72B2E36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="1136" y="256" name="inst_1631E4F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_token" x="224" y="272" name="inst_CF068BB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_token" x="608" y="208" name="inst_71BDA72D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_token" x="1232" y="256" name="inst_42674708" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_token" x="1296" y="256" name="inst_EAFBE112" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_token" x="1360" y="256" name="inst_54E9F3EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snag" x="1984" y="299" name="inst_891C3594" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_3" x="2064" y="320" name="inst_275F3918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="2048" y="320" name="inst_4BF50D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="2032" y="320" name="inst_BA9AFF67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="2016" y="320" name="inst_724848EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="2000" y="320" name="inst_539A56D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1984" y="320" name="inst_C87BAC75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1968" y="320" name="inst_6D4DF749" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1952" y="320" name="inst_9F5C53E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1936" y="320" name="inst_42540B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1920" y="320" name="inst_FB116D4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1904" y="320" name="inst_08B8D135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1888" y="320" name="inst_373EC19E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1872" y="320" name="inst_3EC48F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1856" y="320" name="inst_EBD90D3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1840" y="320" name="inst_62343316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1824" y="320" name="inst_681C41FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1808" y="320" name="inst_13E44F25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1792" y="320" name="inst_B1220228" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1776" y="320" name="inst_F30E8A21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1760" y="320" name="inst_14C7DE1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1744" y="320" name="inst_3EAC7F2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1728" y="320" name="inst_324B720B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1712" y="320" name="inst_CD0B5856" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1696" y="320" name="inst_20CD261A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1680" y="320" name="inst_0E2691A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1664" y="320" name="inst_D065A395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1648" y="320" name="inst_7BC1A5BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1632" y="320" name="inst_D5020A0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1616" y="320" name="inst_85D69D0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1600" y="320" name="inst_0A99869D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1584" y="320" name="inst_32130137" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1568" y="320" name="inst_57787161" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1552" y="320" name="inst_A9CBB58C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1536" y="320" name="inst_05CD411E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1008" y="320" name="inst_02D032A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1024" y="320" name="inst_606582F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1040" y="320" name="inst_5949A8CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1056" y="320" name="inst_6D65B2AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1072" y="320" name="inst_9358CAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1088" y="320" name="inst_2E5FDD5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1104" y="320" name="inst_74D2F34E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1120" y="320" name="inst_019452D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1136" y="320" name="inst_24F1A25D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1152" y="320" name="inst_B69F3D2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1168" y="320" name="inst_1B6C4565" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1184" y="320" name="inst_4AAC5D81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1200" y="320" name="inst_35D6789D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1216" y="320" name="inst_DE1F7629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1232" y="320" name="inst_50D55F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1248" y="320" name="inst_0A851D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1264" y="320" name="inst_43F0E97F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1280" y="320" name="inst_BB315586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1296" y="320" name="inst_7E779A56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1312" y="320" name="inst_29BD13B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1328" y="320" name="inst_963E1535" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1344" y="320" name="inst_55336124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1360" y="320" name="inst_B5F6EFAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1376" y="320" name="inst_320B8BDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1392" y="320" name="inst_43B42956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1408" y="320" name="inst_C880836F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1424" y="320" name="inst_987A29C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1440" y="320" name="inst_D7E1A185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="1456" y="320" name="inst_883E1B23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_1" x="1520" y="320" name="inst_BE430E23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_3" x="1472" y="320" name="inst_DFD1CAE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_3" x="96" y="320" name="inst_C22AA363" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="80" y="320" name="inst_6F0DD995" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="64" y="320" name="inst_B8DF009C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="48" y="320" name="inst_7EB767D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="32" y="320" name="inst_B866CA55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="16" y="320" name="inst_085154F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_top_2" x="0" y="320" name="inst_0EA9698B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_2" x="672" y="288" name="inst_14B88C63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="176" y="225" name="inst_B2D6AF8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="240" y="225" name="inst_F8B0CDD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="416" y="257" name="inst_AFC8AC17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="512" y="209" name="inst_52A9495A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="656" y="273" name="inst_2D308EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1024" y="305" name="inst_673464A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1360" y="305" name="inst_9B862428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1632" y="305" name="inst_F45DE470" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1536" y="305" name="inst_4DC70DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1920" y="305" name="inst_A40B082D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="1808" y="305" name="inst_465AC6A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_2" x="2048" y="305" name="inst_A2683C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="2000" y="305" name="inst_06E5D6AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="1696" y="305" name="inst_05B9AA8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="1104" y="305" name="inst_CB0F9BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="800" y="225" name="inst_F741B359" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="224" y="225" name="inst_DC3E1E24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="544" y="209" name="inst_9966F584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_bubble_1" x="96" y="305" name="inst_A5E40D72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_6" x="528" y="320" name="inst_B4BE1DC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_6" x="800" y="320" name="inst_FEF99294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_6" x="848" y="320" name="inst_B7F6B17A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_6" x="224" y="320" name="inst_114AA193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goo_block_6" x="320" y="320" name="inst_E4235991" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stamp" x="528" y="288" name="inst_81E60A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

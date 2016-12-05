@@ -27,13 +27,22 @@ if place_meeting(x + x_vel,y,obj_ground_breakable)
     x_vel *= -.9;
     audio_play_sound(sound_shell,0,0);
     with hit instance_destroy();
-}    
-else if ((place_meeting(x + x_vel,y,obj_wall)) || place_meeting(x + x_vel,y,obj_shield))
-{
-    x_vel *= -.9;
-    audio_play_sound(sound_shell,0,0);
 }
-
+// Sliding up slope
+if place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y,obj_ground)
+{
+    var yplus = 0;
+    while (place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y-yplus,obj_ground) && yplus <= abs(1*x_vel)) yplus += 1;
+    if place_meeting(x+sign(x_vel)*ceil(abs(x_vel)),y-yplus,obj_ground) || place_meeting(x+x_vel,y,obj_shield)
+    {
+         x_vel *= -.9;
+         audio_play_sound(sound_shell,0,0);
+    }
+    else
+    {
+        y -= yplus;
+    }
+}    
 
 x_vel *= .999
 

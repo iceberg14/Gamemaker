@@ -3,7 +3,7 @@
   <spriteName>spr_player_normal</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-998</depth>
+  <depth>-900</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,12 +37,12 @@ shell_just_thrown = 0;
 invincible = 0;
 shell_on_player = 1;
 shell_hp = 3;
-y_accel = .4;
-x_accel = .4;
+y_accel = .35;
+x_accel = .6;
 x_vel = 0;
 y_vel = 0;
-jumpspeed = 7;
-max_spd_jump = .2;
+jumpspeed = 5.5;
+max_spd_jump = .25;
 enemy = 0;
 x_cap = 3;
 y_cap_rise = 15;

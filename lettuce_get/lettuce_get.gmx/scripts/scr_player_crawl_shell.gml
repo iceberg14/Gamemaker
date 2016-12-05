@@ -44,7 +44,7 @@ if shell_on_player == 0
 }
 
 // Goes to normal state
-if !(down) && place_meeting(x,y+1,obj_wall)
+if !(down) && place_meeting(x,y+1,obj_wall) && !place_meeting(x,y+sprite_yoffset-30,obj_wall)
 {
     state = state.normal;
 }
@@ -59,6 +59,13 @@ if position_meeting(x,y,obj_ladder) && ((up) || (down))
     x_vel = 0;
     x = ladder.x;
     state = state.climb;
+}
+
+// Tapped move so you can't scoot across one pixel at a time without animating
+if keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_left)
+{
+    image_speed = 1;
+    image_index = 1;
 }
 
 
