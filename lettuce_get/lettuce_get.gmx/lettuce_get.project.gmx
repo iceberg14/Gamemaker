@@ -279,29 +279,14 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="Title/Main Menu">
-      <room>rooms\Title_Screen</room>
-      <room>rooms\Main_Menu</room>
-      <room>rooms\Options</room>
-      <room>rooms\Audio</room>
-      <room>rooms\Controls</room>
-    </rooms>
-    <room>rooms\Map</room>
-    <room>rooms\Death_Screen</room>
-    <room>rooms\Game_Over</room>
-    <rooms name="levels">
-      <room>rooms\lvl_1</room>
-      <room>rooms\lvl_2</room>
-      <room>rooms\lvl_3</room>
-      <room>rooms\lvl_4</room>
-    </rooms>
+    <rooms name="Title/Main Menu"/>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>-1</IsTutorial>
-    <TutorialName>C:\Users\Iceberg\AppData\Local\GameMaker-Studio\Tutorials\01_Resources</TutorialName>
-    <TutorialPage>1</TutorialPage>
+    <IsTutorial>0</IsTutorial>
+    <TutorialName></TutorialName>
+    <TutorialPage>0</TutorialPage>
   </TutorialState>
 </assets>
