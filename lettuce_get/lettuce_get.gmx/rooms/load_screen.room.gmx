@@ -3,68 +3,14 @@
   <caption></caption>
   <width>400</width>
   <height>240</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>60</speed>
+  <speed>30</speed>
   <persistent>0</persistent>
-  <colour>16744448</colour>
+  <colour>4194304</colour>
   <showcolour>-1</showcolour>
-  <code>global.lives = 3;
-global.score = 0;
-global.level = "1-1";
-global.screenw = 0;
-global.screenh = 0;
-global.lvl_2_open = 0;
-
-enum state
-{  
-    normal,
-    slide,
-    crawl,
-    crawl_shell,
-    climb,
-}
-
-// creates a 4x4 array of zeroes to form the basis of the save file
-for (var i = 0; i &lt; 4; i += 1)
-{
-    for (var j = 0; j &lt; 4; j += 1)
-    {
-        global.load[i, j] = 0;
-    }
-}
-for (var i = 0; i &lt; 4; i += 1)
-{
-        global.config[i, 0] = 0;
-}
-
-
-audio_play_sound(sound_title,0,1);
-
-if file_exists("config.txt")
-{
-    Load_file = file_text_open_read(working_directory + "config.txt");
-    
-    for (var i = 0; i &lt; 4; i += 1)
-    {
-        global.config[i, 0] = file_text_read_real(Load_file);
-        file_text_readln(Load_file);  
-    }
-    file_text_close(Load_file);    
-    // set volume from file
-    global.vol = global.config[0,0];
-    audio_master_gain(global.vol);
-    // set window size from file
-    window_set_size(global.config[1,0],global.config[2,0]);
-    window_center();
-    global.res = 0;
-}
-else
-{
-    global.vol = 1;
-    global.res = 0;
-}</code>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -85,7 +31,7 @@ else
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-1" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_mountain" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -104,10 +50,7 @@ else
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances>
-    <instance objName="obj_title" x="128" y="96" name="inst_3289E66E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_title_scoot" x="192" y="96" name="inst_B0D317CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-  </instances>
+  <instances/>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

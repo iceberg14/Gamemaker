@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>room_goto(Main_Menu);
+=======
+            <string>room_goto(new_game);
+>>>>>>> refs/remotes/origin/Luke
 global.lives = 3;
 </string>
           </argument>
@@ -49,6 +53,7 @@ global.lives = 3;
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>room_goto(Main_Menu);
 global.lives = 3;
 </string>
@@ -74,6 +79,9 @@ global.lives = 3;
           <argument>
             <kind>1</kind>
             <string>room_goto(Main_Menu);
+=======
+            <string>room_goto(new_game);
+>>>>>>> refs/remotes/origin/Luke
 global.lives = 3;
 </string>
           </argument>
