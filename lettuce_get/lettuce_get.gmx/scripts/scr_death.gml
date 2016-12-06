@@ -1,4 +1,6 @@
 global.lives -= 1;
+scr_save();
+
 
 if global.lives > 0
 {

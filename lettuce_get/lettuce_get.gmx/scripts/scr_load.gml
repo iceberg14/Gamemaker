@@ -18,4 +18,14 @@ if file_exists(filename + ".txt")
     global.lv = 0;
     global.checkpointR = 0;  
 }
+else
+{
+        for (var i = 0; i < 4; i += 1)
+    {
+        for (var j = 0; j < 4; j += 1)
+        {
+            global.load[i, j] = 0;
+        }
+    }
+}
 

@@ -64,7 +64,9 @@ else
 {
     global.vol = 1;
     global.res = 0;
-}</code>
+}
+
+//eric is a loser</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -22,9 +22,5 @@ switch (mpos)
         game_end();
         break;
     }
-    case 4:
-    {
-        scr_load();
-    }
     default: break;
 }
