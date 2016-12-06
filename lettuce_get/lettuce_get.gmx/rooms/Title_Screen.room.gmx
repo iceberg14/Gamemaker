@@ -10,9 +10,11 @@
   <persistent>0</persistent>
   <colour>16744448</colour>
   <showcolour>-1</showcolour>
-  <code>global.lives = 3;
+  <code>global.res = 0;
+global.lives = 3;
 global.score = 0;
 global.level = "1-1";
+global.vol = 1;
 global.screenw = 0;
 global.screenh = 0;
 global.lvl_2_open = 0;
@@ -26,45 +28,16 @@ enum state
     climb,
 }
 
-// creates a 4x4 array of zeroes to form the basis of the save file
-for (var i = 0; i &lt; 4; i += 1)
+// creates a 3x3 array of zeroes to form the basis of the map
+for (var i = 0; i &lt; 3; i += 1)
 {
     for (var j = 0; j &lt; 4; j += 1)
     {
-        global.load[i, j] = 0;
+        global.map_1[i, j] = 0;
     }
 }
-for (var i = 0; i &lt; 4; i += 1)
-{
-        global.config[i, 0] = 0;
-}
 
-
-audio_play_sound(sound_title,0,1);
-
-if file_exists("config.txt")
-{
-    Load_file = file_text_open_read(working_directory + "config.txt");
-    
-    for (var i = 0; i &lt; 4; i += 1)
-    {
-        global.config[i, 0] = file_text_read_real(Load_file);
-        file_text_readln(Load_file);  
-    }
-    file_text_close(Load_file);    
-    // set volume from file
-    global.vol = global.config[0,0];
-    audio_master_gain(global.vol);
-    // set window size from file
-    window_set_size(global.config[1,0],global.config[2,0]);
-    window_center();
-    global.res = 0;
-}
-else
-{
-    global.vol = 1;
-    global.res = 0;
-}</code>
+audio_play_sound(sound_title,0,1);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
