@@ -3,7 +3,7 @@
   <caption></caption>
   <width>2992</width>
   <height>352</height>
-  <vsnap>1</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -65,8 +65,6 @@
     <instance objName="obj_forest_top_2" x="80" y="336" name="inst_2955E5ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_top_2" x="96" y="336" name="inst_CDB98CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_top_2" x="112" y="336" name="inst_F627F48F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forest_top_2" x="128" y="336" name="inst_BF32FECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forest_top_2" x="352" y="336" name="inst_7AAB942A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_top_2" x="368" y="336" name="inst_2378E294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_top_2" x="384" y="336" name="inst_CD19E9B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_top_2" x="416" y="336" name="inst_ECCDCC38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -500,8 +498,10 @@
     <instance objName="obj_forest_rock_1" x="1456" y="321" name="inst_D72DA826" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_rock_1" x="1632" y="321" name="inst_00A539AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_rock_1" x="1776" y="321" name="inst_2C4200D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forest_rock_1" x="128" y="321" name="inst_C2C247F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_rock_1" x="288" y="273" name="inst_9463CB0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_top_3" x="128" y="336" name="inst_BAD34CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_top_1" x="352" y="336" name="inst_1AC7C057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_apple" x="1056" y="176" name="inst_E06B1AC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
