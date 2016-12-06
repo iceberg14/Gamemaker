@@ -26,12 +26,12 @@ enum state
     climb,
 }
 
-// creates a 4x4 array of zeroes to form the basis of the map
+// creates a 4x4 array of zeroes to form the basis of the save file
 for (var i = 0; i &lt; 4; i += 1)
 {
     for (var j = 0; j &lt; 4; j += 1)
     {
-        global.map_1[i, j] = 0;
+        global.load[i, j] = 0;
     }
 }
 for (var i = 0; i &lt; 4; i += 1)

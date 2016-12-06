@@ -41,6 +41,26 @@ if file_exists("slot_1.txt") slot_full[0] = 1;
 if file_exists("slot_2.txt") slot_full[1] = 1;
 if file_exists("slot_3.txt") slot_full[2] = 1;
 
+
+// Reads data from all save files 
+for (var k = 1; k &lt; 4; k += 1)
+{
+    filename = string("Slot_" + string(k) + ".txt");
+    if file_exists(filename)
+    {
+        Load_file = file_text_open_read(working_directory + filename);
+        for (var i = 0; i &lt; 4; i += 1)
+        {
+            for (var j = 0; j &lt; 4; j += 1)
+            {
+                global.load[i, j] = file_text_read_real(Load_file);
+                file_text_readln(Load_file);
+            }
+        }      
+        file_text_close(Load_file);
+        load_life[k-1] = global.load[0,0];    
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -80,6 +100,7 @@ if (push == 1)
 {
     audio_play_sound(sound_select,0,0);
     global.slot = mpos + 1;
+    scr_load(); // loads slots corresponding save file and goes to correct room
     room_goto(Map);
 }
 
@@ -111,6 +132,8 @@ draw_set_valign(fa_center);
 draw_set_color(c_black);
 draw_set_font(fnt_pause);
 
+
+// Draws slots and things
 var m;
 for (m = 0; m &lt; array_length_1d(slot); m += 1)
 {
@@ -122,7 +145,8 @@ for (m = 0; m &lt; array_length_1d(slot); m += 1)
     else
     {
         draw_set_color(c_green);
-        draw_text(x + space, y + (m * space),string(slot[m]))
+        draw_text(x + space  , y + (m * space),string(slot[m]))
+        draw_text(x + 3*space, y + (m * space),string("lives:  " + string(load_life[m])));
     }
 }
 

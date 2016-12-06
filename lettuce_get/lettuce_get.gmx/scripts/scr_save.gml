@@ -1,3 +1,5 @@
+global.load[0,0] = global.lives;
+
 filename = string("Slot_" + string(global.slot));
 if file_exists(filename) file_delete(filename);
     Save_file = file_text_open_write(working_directory + filename + ".txt");
@@ -7,7 +9,7 @@ for (var i = 0; i < 4; i += 1)
 {
     for (var j = 0; j < 4; j += 1)
     {
-        cell = global.map_1[i, j];
+        cell = global.load[i, j];
         file_text_write_real(Save_file,cell);
         file_text_writeln(Save_file)
     }

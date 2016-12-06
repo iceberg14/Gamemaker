@@ -28,7 +28,7 @@
             <string>///Send to Map Screen
 if place_meeting(x,y,obj_player) 
 {
-global.map_1[1,1] = 1;
+global.load[1,1] = 1;
 room_goto(Map);
 audio_stop_sound(sound_main)
 scr_save();
