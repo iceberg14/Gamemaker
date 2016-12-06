@@ -253,9 +253,11 @@
       <script>scripts\scr_play.gml</script>
       <script>scripts\scr_options.gml</script>
       <script>scripts\scr_audio.gml</script>
-      <script>scripts\scr_main_menu.gml</script>
       <script>scripts\scr_load.gml</script>
+      <script>scripts\scr_main_menu.gml</script>
       <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_save_config.gml</script>
+      <script>scripts\scr_new_game.gml</script>
     </scripts>
     <scripts name="Map">
       <script>scripts\scr_map.gml</script>
@@ -381,6 +383,7 @@
       <object>objects\obj_audio</object>
       <object>objects\obj_controls</object>
       <object>objects\obj_load</object>
+      <object>objects\obj_new_game</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_restart</object>
@@ -440,6 +443,8 @@
       <room>rooms\Play</room>
       <room>rooms\Audio</room>
       <room>rooms\Controls</room>
+      <room>rooms\load_screen</room>
+      <room>rooms\new_game</room>
     </rooms>
     <rooms name="Death">
       <room>rooms\Game_Over</room>

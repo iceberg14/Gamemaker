@@ -56,10 +56,16 @@ mpos = 0;
             <kind>1</kind>
             <string>if keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_backspace) 
 {
+<<<<<<< HEAD
     audio_play_sound(sound_select,0,0);
     room_goto(Options);
 }
 
+=======
+    scr_save_config();
+    room_goto(Options);
+}
+>>>>>>> refs/remotes/origin/Luke
 // Move through options
 var move = 0;
 move -= keyboard_check_pressed(vk_up);
@@ -119,7 +125,7 @@ if (volmove != 0)
     }
 }
 
-
+global.config[0,0] = global.vol;
 </string>
           </argument>
         </arguments>
