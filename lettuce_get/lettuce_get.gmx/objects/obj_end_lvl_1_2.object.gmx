@@ -73,7 +73,6 @@ touch = 0;
           <argument>
             <kind>1</kind>
             <string>///Send to Map Screen
-<<<<<<< HEAD
 global.map_1[1,2] = 1;
 
 
@@ -96,14 +95,6 @@ file_text_close(Save_file);
 room_goto(Map);
 audio_stop_all();
 
-=======
-if place_meeting(x,y,obj_player) 
-{
-global.load[1,2] = 1;
-room_goto(Map);
-audio_stop_sound(sound_main)
-scr_save();
->>>>>>> refs/remotes/origin/Luke
 
 </string>
           </argument>

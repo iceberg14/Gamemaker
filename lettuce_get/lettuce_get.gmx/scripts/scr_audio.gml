@@ -15,7 +15,6 @@ switch (mpos)
     case 3:
     {
         room_goto(Options);
-        scr_save_config();
         break;
     }
     default: break;

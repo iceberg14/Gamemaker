@@ -1,21 +1,35 @@
-
-filename = string("Slot_" + string(global.slot));
-if file_exists(filename + ".txt")
+if file_exists("Save.txt")
 {
-    Load_file = file_text_open_read(working_directory + filename + ".txt");
+
+    Load_file = file_text_open_read(working_directory + "Save.txt");
+    /*
+    Load_room = file_text_read_real(Load_file);
+    file_text_readln(Load_file);
+    global.Load_x = file_text_read_real(Load_file);
+    file_text_readln(Load_file);
+    global.Load_y = file_text_read_real(Load_file);
+    file_text_readln(Load_file);
+    global.Load_lives = file_text_read_real(Load_file);
+    */
     
-    for (var i = 0; i < 4; i += 1)
+    for (var i = 0; i < 3; i += 1)
     {
         for (var j = 0; j < 4; j += 1)
         {
-            global.load[i, j] = file_text_read_real(Load_file);
+            global.map_1[i, j] = file_text_read_real(Load_file);
             file_text_readln(Load_file);
         }
     }
     
-    file_text_close(Load_file);
     global.Loaded = 1;
     global.lv = 0;
-    global.checkpointR = 0;  
+    file_text_close(Load_file);
+    global.checkpointR = 0;
+    
 }
-
+else
+{
+global.Loaded = 0;
+}
+room_goto(Map);
+    
